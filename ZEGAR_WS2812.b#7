@@ -195,10 +195,11 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="160" y2="0" width="0" layer="20"/>
-<wire x1="160" y1="0" x2="160" y2="100" width="0" layer="20"/>
-<wire x1="160" y1="100" x2="0" y2="100" width="0" layer="20"/>
-<wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
+<dimension x1="3.81" y1="20.32" x2="73.66" y2="20.32" x3="38.735" y3="53.34" textsize="1.778" layer="1"/>
+<dimension x1="-39.37" y1="20.32" x2="148.59" y2="20.32" x3="54.61" y3="120.65" textsize="1.778" layer="1"/>
+<circle x="54.61" y="17.78" radius="93.679178125" width="0.1524" layer="20"/>
+<dimension x1="78.74" y1="29.21" x2="78.74" y2="11.43" x3="95.25" y3="20.32" textsize="1.778" layer="20"/>
+<dimension x1="29.21" y1="36.83" x2="80.01" y2="36.83" x3="54.61" y3="43.18" textsize="1.778" layer="20"/>
 </plain>
 <libraries>
 <library name="adafruit" urn="urn:adsk.eagle:library:420">

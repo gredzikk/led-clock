@@ -29,7 +29,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -135,6 +135,12 @@
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="156" name="gesam-Maß" color="1" fill="7" visible="no" active="no"/>
+<layer number="157" name="FaceMchng" color="3" fill="1" visible="no" active="no"/>
+<layer number="158" name="FaceMMeas" color="3" fill="1" visible="no" active="no"/>
+<layer number="159" name="Geh-Bear2" color="1" fill="7" visible="no" active="no"/>
+<layer number="160" name="Topologie" color="9" fill="1" visible="no" active="no"/>
+<layer number="161" name="tomplace2" color="7" fill="1" visible="no" active="no"/>
 <layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
@@ -182,6 +188,7 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="7" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="7" fill="1" visible="no" active="no"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="no" active="no"/>
 <layer number="253" name="Extra" color="7" fill="1" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
@@ -192,7 +199,6 @@
 <wire x1="160" y1="0" x2="160" y2="100" width="0" layer="20"/>
 <wire x1="160" y1="100" x2="0" y2="100" width="0" layer="20"/>
 <wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
-<dimension x1="-113.157" y1="34.036" x2="-12.954" y2="33.909" x3="-63.026040625" y3="57.215396875" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
 <library name="adafruit" urn="urn:adsk.eagle:library:420">
@@ -1505,110 +1511,287 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </package3d>
 </packages3d>
 </library>
-<library name="Wurth_LEDs_WL-TMRW" urn="urn:adsk.eagle:library:19063499">
-<description>&lt;BR&gt;Wurth Elektronik - Optoelectronic Components - LEDs - Singnal LEDs - TOP LED - THT Round - WL-TMRW&lt;br&gt;&lt;Hr&gt;
-&lt;BR&gt;&lt;BR&gt;
-
-&lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
-&lt;TR&gt;   
-&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;&lt;br&gt;
-      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt; &lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
-      ---------------------------&lt;BR&gt;
-&lt;B&gt;&lt;I&gt;&lt;span style='font-size:26pt;
-  color:#FF6600;'&gt;WE &lt;/span&gt;&lt;/i&gt;&lt;/b&gt;
-&lt;BR&gt;
-      ---------------------------&lt;BR&gt;&lt;b&gt;Würth Elektronik&lt;/b&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
-      ---------O---&lt;BR&gt;
-      ----O--------&lt;BR&gt;
-      ---------O---&lt;BR&gt;
-      ----O--------&lt;BR&gt;
-      ---------O---&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-   
-&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;
-      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-
-  &lt;TR&gt;
-    &lt;TD COLSPAN=7&gt;&amp;nbsp;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  
-&lt;/TABLE&gt;
-&lt;B&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;More than you expect&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;/B&gt;
-
-&lt;HR&gt;&lt;BR&gt;
-&lt;b&gt;Würth Elektronik eiSos GmbH &amp; Co. KG&lt;/b&gt;&lt;br&gt;
-EMC &amp; Inductive Solutions&lt;br&gt;
-
-Max-Eyth-Str.1&lt;br&gt;
-D-74638 Waldenburg&lt;br&gt;
+<library name="SparkFun-IC-Logic" urn="urn:adsk.eagle:library:523">
+<description>&lt;h3&gt;SparkFun Logic ICs&lt;/h3&gt;
+This library contains parts which fit into the standard logic IC families.&lt;br&gt;&lt;br&gt;
+This library is special as the devices are most generalized, with manufacturer specific variants stemming from the generalized numbers.  It also uses individual gates for common parts with a power consort.  Place the gates in a schematic such that they are easy to see in the circuit, and apply power to the power symbol for multigate packages. 
 &lt;br&gt;
-Tel: +49 (0)7942-945-0&lt;br&gt;
-Fax:+49 (0)7942-945-5000&lt;br&gt;
 &lt;br&gt;
-&lt;a href="http://www.we-online.com/web/en/electronic_components/produkte_pb/bauteilebibliotheken/eagle_4.php"&gt;www.we-online.com/eagle&lt;/a&gt;&lt;br&gt;
-&lt;a href="mailto:libraries@we-online.com"&gt;libraries@we-online.com&lt;/a&gt; &lt;BR&gt;&lt;BR&gt;
-&lt;br&gt;&lt;HR&gt;&lt;BR&gt;
-Neither Autodesk nor Würth Elektronik eiSos does warrant that this library is error-free or &lt;br&gt;
-that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
-Please contact us for more information.&lt;br&gt;
-&lt;HR&gt;
-&lt;br&gt;Eagle Version 9, Library Revision 2022a, 2022-06-20&lt;br&gt;
-&lt;HR&gt;
-Copyright: Würth Elektronik</description>
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="WL-TMRW_3MM_STOPPER" urn="urn:adsk.eagle:footprint:19063501/2" library_version="3">
-<description>&lt;b&gt;WL-TMRW THT Mono-color Round Waterclear
-
-&lt;/b&gt;&lt;br&gt; &lt;br&gt;3mm with stopper, THT, 2pins</description>
-<pad name="2" x="-1.27" y="0.1" drill="1"/>
-<pad name="1" x="1.27" y="0.1" drill="1"/>
-<text x="-2.9" y="0.1" size="1.016" layer="21" align="center">+</text>
-<text x="-2.9" y="0.1" size="1.016" layer="51" align="center">+</text>
-<text x="0" y="2.5" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-4" size="1.27" layer="27" align="bottom-center">&gt;VALUE</text>
-<circle x="0" y="0.1" radius="1.5" width="0.1" layer="51"/>
-<wire x1="1.5" y1="1.34" x2="1.5" y2="-1.14" width="0.1" layer="51"/>
-<wire x1="1.5" y1="1.34" x2="1.5" y2="-1.14" width="0.1" layer="51" curve="283.140843"/>
-<wire x1="1.6" y1="1.1" x2="1.6" y2="1.4" width="0.2" layer="21"/>
-<wire x1="1.6" y1="-0.9" x2="1.6" y2="-1.2" width="0.2" layer="21"/>
-<wire x1="1.6" y1="1.4" x2="-2" y2="0.95" width="0.2" layer="21" curve="119.415802"/>
-<wire x1="1.6" y1="-1.2" x2="-2" y2="-0.7" width="0.2" layer="21" curve="-121.485398"/>
-<polygon width="0.1" layer="39">
-<vertex x="0" y="-2.15" curve="-90"/>
-<vertex x="-2.25" y="0.1" curve="-90"/>
-<vertex x="0" y="2.35" curve="-90"/>
-<vertex x="2.25" y="0.1" curve="-90"/>
+<package name="SO16" urn="urn:adsk.eagle:footprint:38789/2" library_version="2">
+<description>SOIC, 0.15 inch width</description>
+<wire x1="4.8768" y1="1.9463" x2="-4.8768" y2="1.9463" width="0.2032" layer="21"/>
+<wire x1="4.9768" y1="-1.9463" x2="5.2578" y2="-1.5653" width="0.2032" layer="21" curve="90"/>
+<wire x1="-5.2578" y1="1.4653" x2="-4.8768" y2="1.9463" width="0.2032" layer="21" curve="-90.023829"/>
+<wire x1="4.8768" y1="1.9463" x2="5.2578" y2="1.5653" width="0.2032" layer="21" curve="-90.030084"/>
+<wire x1="-5.2578" y1="-1.6653" x2="-4.8768" y2="-1.9463" width="0.2032" layer="21" curve="90.060185"/>
+<wire x1="-4.8768" y1="-1.9463" x2="4.9768" y2="-1.9463" width="0.2032" layer="21"/>
+<wire x1="5.2578" y1="-1.5653" x2="5.2578" y2="1.5653" width="0.2032" layer="21"/>
+<wire x1="-5.207" y1="0.6096" x2="-5.207" y2="-0.6604" width="0.2032" layer="21" curve="-180"/>
+<wire x1="-5.2578" y1="1.4526" x2="-5.2578" y2="0.6096" width="0.2032" layer="21"/>
+<wire x1="-5.2578" y1="-1.6653" x2="-5.2578" y2="-0.6604" width="0.2032" layer="21"/>
+<rectangle x1="-4.699" y1="-3.302" x2="-4.191" y2="-2.2733" layer="51"/>
+<rectangle x1="-3.429" y1="-3.302" x2="-2.921" y2="-2.2733" layer="51"/>
+<rectangle x1="-2.159" y1="-3.302" x2="-1.651" y2="-2.2733" layer="51"/>
+<rectangle x1="-0.889" y1="-3.302" x2="-0.381" y2="-2.2733" layer="51"/>
+<rectangle x1="0.381" y1="-3.302" x2="0.889" y2="-2.2733" layer="51"/>
+<rectangle x1="1.651" y1="-3.302" x2="2.159" y2="-2.2733" layer="51"/>
+<rectangle x1="2.921" y1="-3.302" x2="3.429" y2="-2.2733" layer="51"/>
+<rectangle x1="4.191" y1="-3.302" x2="4.699" y2="-2.2733" layer="51"/>
+<rectangle x1="-3.429" y1="2.286" x2="-2.921" y2="3.302" layer="51"/>
+<rectangle x1="-2.159" y1="2.286" x2="-1.651" y2="3.302" layer="51"/>
+<rectangle x1="-0.889" y1="2.286" x2="-0.381" y2="3.302" layer="51"/>
+<rectangle x1="0.381" y1="2.286" x2="0.889" y2="3.302" layer="51"/>
+<rectangle x1="1.651" y1="2.286" x2="2.159" y2="3.302" layer="51"/>
+<rectangle x1="2.921" y1="2.286" x2="3.429" y2="3.302" layer="51"/>
+<rectangle x1="4.191" y1="2.286" x2="4.699" y2="3.302" layer="51"/>
+<rectangle x1="-4.699" y1="2.286" x2="-4.191" y2="3.302" layer="51"/>
+<smd name="1" x="-4.445" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="2" x="-3.175" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="3" x="-1.905" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="4" x="-0.635" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="5" x="0.635" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="6" x="1.905" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="7" x="3.175" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="8" x="4.445" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="9" x="4.445" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="10" x="3.175" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="11" x="1.905" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="12" x="0.635" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="13" x="-0.635" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="14" x="-1.905" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="15" x="-3.175" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="16" x="-4.445" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<text x="-5.715" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="6.35" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;VALUE</text>
+<polygon width="0.002540625" layer="21">
+<vertex x="-5.23875" y="-2.38125" curve="90"/>
+<vertex x="-5.55625" y="-2.06375" curve="90"/>
+<vertex x="-5.87375" y="-2.38125" curve="90"/>
+<vertex x="-5.55625" y="-2.69875" curve="90"/>
 </polygon>
 </package>
 </packages>
 <packages3d>
-<package3d name="WL-TMRW_3MM_STOPPER" urn="urn:adsk.eagle:package:19063506/3" type="model" library_version="3">
-<description>&lt;b&gt;WL-TMRW THT Mono-color Round Waterclear
-
-&lt;/b&gt;&lt;br&gt; &lt;br&gt;3mm with stopper, THT, 2pins</description>
+<package3d name="SO16" urn="urn:adsk.eagle:package:38808/2" type="box" library_version="2">
+<description>SOIC, 0.15 inch width</description>
 <packageinstances>
-<packageinstance name="WL-TMRW_3MM_STOPPER"/>
+<packageinstance name="SO16"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="transistor-pnp" urn="urn:adsk.eagle:library:399">
+<description>&lt;b&gt;PNP Transistors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SOT23-BEC" urn="urn:adsk.eagle:footprint:28685/1" library_version="5">
+<description>TO-236 ITT Intermetall</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.127" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.127" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.127" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.127" layer="51"/>
+<smd name="C" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="E" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="B" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="SOT23-BEC" urn="urn:adsk.eagle:package:28748/2" type="model" library_version="5">
+<description>TO-236 ITT Intermetall</description>
+<packageinstances>
+<packageinstance name="SOT23-BEC"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="Resistor" urn="urn:adsk.eagle:library:16378527">
+<description>&lt;B&gt;Resistors, Potentiometers, TrimPot</description>
+<packages>
+<package name="RESC2012X65" urn="urn:adsk.eagle:footprint:16378532/4" library_version="16">
+<description>Chip, 2.00 X 1.25 X 0.65 mm body
+&lt;p&gt;Chip package with body size 2.00 X 1.25 X 0.65 mm&lt;/p&gt;</description>
+<wire x1="1.075" y1="1.0241" x2="-1.075" y2="1.0241" width="0.127" layer="21"/>
+<wire x1="1.075" y1="-1.0241" x2="-1.075" y2="-1.0241" width="0.127" layer="21"/>
+<wire x1="1.075" y1="-0.7" x2="-1.075" y2="-0.7" width="0.12" layer="51"/>
+<wire x1="-1.075" y1="-0.7" x2="-1.075" y2="0.7" width="0.12" layer="51"/>
+<wire x1="-1.075" y1="0.7" x2="1.075" y2="0.7" width="0.12" layer="51"/>
+<wire x1="1.075" y1="0.7" x2="1.075" y2="-0.7" width="0.12" layer="51"/>
+<smd name="1" x="-0.9195" y="0" dx="1.0312" dy="1.4202" layer="1"/>
+<smd name="2" x="0.9195" y="0" dx="1.0312" dy="1.4202" layer="1"/>
+<text x="0" y="1.6591" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.6591" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="RESC2012X65" urn="urn:adsk.eagle:package:42429645/1" type="box" library_version="16">
+<description>Chip, 2.00 X 1.25 X 0.65 mm body
+&lt;p&gt;Chip package with body size 2.00 X 1.25 X 0.65 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="RESC2012X65"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="pinhead" urn="urn:adsk.eagle:library:325">
+<description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="1X06" urn="urn:adsk.eagle:footprint:22361/1" library_version="4">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="0.635" x2="5.08" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-6.985" y1="1.27" x2="-5.715" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="1.27" x2="-5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0.635" x2="-5.08" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-0.635" x2="-5.715" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0.635" x2="-4.445" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="-1.27" x2="-5.08" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="0.635" x2="-7.62" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-6.985" y1="1.27" x2="-7.62" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="-0.635" x2="-6.985" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="-1.27" x2="-6.985" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.985" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="1.27" x2="7.62" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="0.635" x2="7.62" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="-0.635" x2="6.985" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-0.635" x2="5.715" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="-1.27" x2="5.715" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="-6.35" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="-3.81" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="4" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="5" x="3.81" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="6" x="6.35" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-7.6962" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-7.62" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+<rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
+<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
+</package>
+<package name="1X07" urn="urn:adsk.eagle:footprint:22367/1" library_version="4">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="0.635" x2="6.35" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.635" x2="-3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="1.27" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-1.27" x2="-3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-8.255" y1="1.27" x2="-6.985" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-6.985" y1="1.27" x2="-6.35" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="0.635" x2="-6.35" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="-0.635" x2="-6.985" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="0.635" x2="-5.715" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="1.27" x2="-4.445" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="1.27" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.635" x2="-3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-0.635" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="-1.27" x2="-5.715" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="-1.27" x2="-6.35" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="0.635" x2="-8.89" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-8.255" y1="1.27" x2="-8.89" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-0.635" x2="-8.255" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-6.985" y1="-1.27" x2="-8.255" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="1.27" x2="8.255" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="8.255" y1="1.27" x2="8.89" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="8.89" y1="0.635" x2="8.89" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="8.89" y1="-0.635" x2="8.255" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="1.27" x2="6.35" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="6.985" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="8.255" y1="-1.27" x2="6.985" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="-7.62" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="-5.08" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="4" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="5" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="6" x="5.08" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="7" x="7.62" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-8.9662" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-8.89" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
+<rectangle x1="-5.334" y1="-0.254" x2="-4.826" y2="0.254" layer="51"/>
+<rectangle x1="-7.874" y1="-0.254" x2="-7.366" y2="0.254" layer="51"/>
+<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="1X06" urn="urn:adsk.eagle:package:22472/2" type="model" library_version="4">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="1X06"/>
+</packageinstances>
+</package3d>
+<package3d name="1X07" urn="urn:adsk.eagle:package:22477/2" type="model" library_version="4">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="1X07"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1857,1123 +2040,126 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="11.684" y="21.59" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="14.224" y="20.32" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="D1" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-18.542" y="4.953" smashed="yes" rot="R90">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-18.542" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-18.542" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-18.542" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-18.542" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-18.542" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-18.542" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-21.042" y="4.953" size="1.27" layer="25" rot="R90" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-18.542" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-18.542" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-14.542" y="4.953" size="1.27" layer="27" rot="R90" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-18.542" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
-<element name="D2" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-23.241" y="4.953" smashed="yes" rot="R90">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-23.241" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-23.241" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-23.241" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-23.241" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-23.241" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-23.241" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-25.741" y="4.953" size="1.27" layer="25" rot="R90" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-23.241" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-23.241" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-19.241" y="4.953" size="1.27" layer="27" rot="R90" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-23.241" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
-<element name="D3" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-27.94" y="4.953" smashed="yes" rot="R90">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-27.94" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-27.94" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-27.94" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-27.94" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-27.94" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-27.94" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-30.44" y="4.953" size="1.27" layer="25" rot="R90" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-27.94" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-27.94" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-23.94" y="4.953" size="1.27" layer="27" rot="R90" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-27.94" y="4.953" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
-<element name="D4" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-31.369" y="8.255" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-44.069" y="18.415" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-44.069" y="18.415" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-44.069" y="18.415" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-44.069" y="18.415" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-44.069" y="18.415" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-44.069" y="18.415" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-31.369" y="10.755" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-44.069" y="18.415" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-44.069" y="18.415" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-31.369" y="4.255" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-44.069" y="18.415" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D5" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-31.369" y="12.954" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-55.499" y="32.004" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-55.499" y="32.004" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-55.499" y="32.004" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-55.499" y="32.004" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-55.499" y="32.004" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-55.499" y="32.004" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-31.369" y="15.454" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-55.499" y="32.004" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-55.499" y="32.004" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-31.369" y="8.954" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-55.499" y="32.004" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D6" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-31.369" y="17.653" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-66.929" y="45.593" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-66.929" y="45.593" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-66.929" y="45.593" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-66.929" y="45.593" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-66.929" y="45.593" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-66.929" y="45.593" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-31.369" y="20.153" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-66.929" y="45.593" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-66.929" y="45.593" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-31.369" y="13.653" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-66.929" y="45.593" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D7" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-15.24" y="8.382" smashed="yes" rot="R180">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-2.54" y="-0.508" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-2.54" y="-0.508" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-2.54" y="-0.508" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-2.54" y="-0.508" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-2.54" y="-0.508" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-2.54" y="-0.508" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-15.24" y="5.882" size="1.27" layer="25" rot="R180" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-2.54" y="-0.508" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-2.54" y="-0.508" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-15.24" y="12.382" size="1.27" layer="27" rot="R180" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-2.54" y="-0.508" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="D8" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-15.24" y="13.081" smashed="yes" rot="R180">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="8.89" y="-4.699" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="8.89" y="-4.699" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="8.89" y="-4.699" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="8.89" y="-4.699" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="8.89" y="-4.699" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="8.89" y="-4.699" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-15.24" y="10.581" size="1.27" layer="25" rot="R180" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="8.89" y="-4.699" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="8.89" y="-4.699" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-15.24" y="17.081" size="1.27" layer="27" rot="R180" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="8.89" y="-4.699" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="D9" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-15.24" y="17.78" smashed="yes" rot="R180">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="20.32" y="-8.89" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="20.32" y="-8.89" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="20.32" y="-8.89" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="20.32" y="-8.89" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="20.32" y="-8.89" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="20.32" y="-8.89" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-15.24" y="15.28" size="1.27" layer="25" rot="R180" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="20.32" y="-8.89" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="20.32" y="-8.89" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-15.24" y="21.78" size="1.27" layer="27" rot="R180" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="20.32" y="-8.89" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="D10" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-28.194" y="21.209" smashed="yes" rot="R270">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-19.304" y="33.909" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-19.304" y="33.909" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-19.304" y="33.909" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-19.304" y="33.909" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-19.304" y="33.909" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-19.304" y="33.909" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-25.694" y="21.209" size="1.27" layer="25" rot="R270" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-19.304" y="33.909" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-19.304" y="33.909" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-32.194" y="21.209" size="1.27" layer="27" rot="R270" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-19.304" y="33.909" size="1.778" layer="27" rot="R270" display="off"/>
-</element>
-<element name="D11" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-23.495" y="21.209" smashed="yes" rot="R270">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-5.715" y="45.339" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-5.715" y="45.339" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-5.715" y="45.339" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-5.715" y="45.339" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-5.715" y="45.339" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-5.715" y="45.339" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-20.995" y="21.209" size="1.27" layer="25" rot="R270" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-5.715" y="45.339" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-5.715" y="45.339" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-27.495" y="21.209" size="1.27" layer="27" rot="R270" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-5.715" y="45.339" size="1.778" layer="27" rot="R270" display="off"/>
-</element>
-<element name="D12" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-18.669" y="21.082" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-54.229" y="47.752" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-54.229" y="47.752" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-54.229" y="47.752" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-54.229" y="47.752" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-54.229" y="47.752" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-54.229" y="47.752" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-18.669" y="23.582" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-54.229" y="47.752" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-54.229" y="47.752" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-18.669" y="17.082" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-54.229" y="47.752" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D13" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-31.369" y="24.511" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-44.069" y="33.401" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-44.069" y="33.401" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-44.069" y="33.401" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-44.069" y="33.401" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-44.069" y="33.401" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-44.069" y="33.401" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-31.369" y="27.011" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-44.069" y="33.401" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-44.069" y="33.401" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-31.369" y="20.511" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-44.069" y="33.401" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D14" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-31.369" y="29.21" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-55.499" y="46.99" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-55.499" y="46.99" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-55.499" y="46.99" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-55.499" y="46.99" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-55.499" y="46.99" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-55.499" y="46.99" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-31.369" y="31.71" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-55.499" y="46.99" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-55.499" y="46.99" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-31.369" y="25.21" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-55.499" y="46.99" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D15" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-31.369" y="33.909" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-66.929" y="60.579" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-66.929" y="60.579" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-66.929" y="60.579" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-66.929" y="60.579" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-66.929" y="60.579" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-66.929" y="60.579" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-31.369" y="36.409" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-66.929" y="60.579" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-66.929" y="60.579" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-31.369" y="29.909" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-66.929" y="60.579" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D16" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-28.067" y="37.338" smashed="yes" rot="R270">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-19.177" y="50.038" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-19.177" y="50.038" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-19.177" y="50.038" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-19.177" y="50.038" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-19.177" y="50.038" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-19.177" y="50.038" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-25.567" y="37.338" size="1.27" layer="25" rot="R270" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-19.177" y="50.038" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-19.177" y="50.038" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-32.067" y="37.338" size="1.27" layer="27" rot="R270" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-19.177" y="50.038" size="1.778" layer="27" rot="R270" display="off"/>
-</element>
-<element name="D17" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-23.368" y="37.338" smashed="yes" rot="R270">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-5.588" y="61.468" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-5.588" y="61.468" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-5.588" y="61.468" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-5.588" y="61.468" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-5.588" y="61.468" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-5.588" y="61.468" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-20.868" y="37.338" size="1.27" layer="25" rot="R270" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-5.588" y="61.468" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-5.588" y="61.468" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-27.368" y="37.338" size="1.27" layer="27" rot="R270" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-5.588" y="61.468" size="1.778" layer="27" rot="R270" display="off"/>
-</element>
-<element name="D18" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-18.669" y="37.338" smashed="yes" rot="R270">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="8.001" y="72.898" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="8.001" y="72.898" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="8.001" y="72.898" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="8.001" y="72.898" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="8.001" y="72.898" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="8.001" y="72.898" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-16.169" y="37.338" size="1.27" layer="25" rot="R270" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="8.001" y="72.898" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="8.001" y="72.898" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-22.669" y="37.338" size="1.27" layer="27" rot="R270" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="8.001" y="72.898" size="1.778" layer="27" rot="R270" display="off"/>
-</element>
-<element name="D19" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-15.367" y="34.036" smashed="yes" rot="R180">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-2.667" y="25.146" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-2.667" y="25.146" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-2.667" y="25.146" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-2.667" y="25.146" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-2.667" y="25.146" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-2.667" y="25.146" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-15.367" y="31.536" size="1.27" layer="25" rot="R180" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-2.667" y="25.146" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-2.667" y="25.146" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-15.367" y="38.036" size="1.27" layer="27" rot="R180" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-2.667" y="25.146" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="D20" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-15.367" y="29.337" smashed="yes" rot="R180">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="8.763" y="11.557" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="8.763" y="11.557" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="8.763" y="11.557" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="8.763" y="11.557" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="8.763" y="11.557" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="8.763" y="11.557" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-15.367" y="26.837" size="1.27" layer="25" rot="R180" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="8.763" y="11.557" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="8.763" y="11.557" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-15.367" y="33.337" size="1.27" layer="27" rot="R180" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="8.763" y="11.557" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="D21" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-15.367" y="24.638" smashed="yes" rot="R180">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="20.193" y="-2.032" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="20.193" y="-2.032" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="20.193" y="-2.032" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="20.193" y="-2.032" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="20.193" y="-2.032" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="20.193" y="-2.032" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-15.367" y="22.138" size="1.27" layer="25" rot="R180" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="20.193" y="-2.032" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="20.193" y="-2.032" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-15.367" y="28.638" size="1.27" layer="27" rot="R180" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="20.193" y="-2.032" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="D22" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-39.878" y="33.909" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-52.578" y="44.069" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-52.578" y="44.069" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-52.578" y="44.069" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-52.578" y="44.069" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-52.578" y="44.069" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-52.578" y="44.069" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-39.878" y="36.409" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-52.578" y="44.069" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-52.578" y="44.069" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-39.878" y="29.909" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-52.578" y="44.069" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D23" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-43.18" y="37.338" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-82.55" y="47.498" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-82.55" y="47.498" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-82.55" y="47.498" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-82.55" y="47.498" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-82.55" y="47.498" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-82.55" y="47.498" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-43.18" y="39.838" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-82.55" y="47.498" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-82.55" y="47.498" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-43.18" y="33.338" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-82.55" y="47.498" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D24" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-52.705" y="37.465" smashed="yes" rot="R270">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-42.545" y="103.505" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-42.545" y="103.505" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-42.545" y="103.505" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-42.545" y="103.505" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-42.545" y="103.505" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-42.545" y="103.505" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-50.205" y="37.465" size="1.27" layer="25" rot="R270" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-42.545" y="103.505" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-42.545" y="103.505" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-56.705" y="37.465" size="1.27" layer="27" rot="R270" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-42.545" y="103.505" size="1.778" layer="27" rot="R270" display="off"/>
-</element>
-<element name="D25" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-48.006" y="37.465" smashed="yes" rot="R270">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-28.956" y="84.455" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-28.956" y="84.455" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-28.956" y="84.455" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-28.956" y="84.455" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-28.956" y="84.455" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-28.956" y="84.455" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-45.506" y="37.465" size="1.27" layer="25" rot="R270" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-28.956" y="84.455" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-28.956" y="84.455" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-52.006" y="37.465" size="1.27" layer="27" rot="R270" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-28.956" y="84.455" size="1.778" layer="27" rot="R270" display="off"/>
-</element>
-<element name="D26" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-55.626" y="33.909" smashed="yes" rot="R180">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="18.034" y="14.859" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="18.034" y="14.859" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="18.034" y="14.859" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="18.034" y="14.859" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="18.034" y="14.859" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="18.034" y="14.859" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-55.626" y="31.409" size="1.27" layer="25" rot="R180" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="18.034" y="14.859" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="18.034" y="14.859" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-55.626" y="37.909" size="1.27" layer="27" rot="R180" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="18.034" y="14.859" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="D27" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-63.5" y="26.67" smashed="yes" rot="R90">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-82.55" y="-73.66" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-82.55" y="-73.66" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-82.55" y="-73.66" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-82.55" y="-73.66" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-82.55" y="-73.66" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-82.55" y="-73.66" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-66" y="26.67" size="1.27" layer="25" rot="R90" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-82.55" y="-73.66" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-82.55" y="-73.66" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-59.5" y="26.67" size="1.27" layer="27" rot="R90" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-82.55" y="-73.66" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
-<element name="D28" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-96.393" y="33.909" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-177.673" y="61.849" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-177.673" y="61.849" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-177.673" y="61.849" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-177.673" y="61.849" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-177.673" y="61.849" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-177.673" y="61.849" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-96.393" y="36.409" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-177.673" y="61.849" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-177.673" y="61.849" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-96.393" y="29.909" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-177.673" y="61.849" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D29" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-84.074" y="37.465" smashed="yes" rot="R270">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-56.134" y="145.415" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-56.134" y="145.415" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-56.134" y="145.415" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-56.134" y="145.415" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-56.134" y="145.415" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-56.134" y="145.415" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-81.574" y="37.465" size="1.27" layer="25" rot="R270" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-56.134" y="145.415" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-56.134" y="145.415" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-88.074" y="37.465" size="1.27" layer="27" rot="R270" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-56.134" y="145.415" size="1.778" layer="27" rot="R270" display="off"/>
-</element>
-<element name="D30" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-71.374" y="33.909" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-205.994" y="61.849" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-205.994" y="61.849" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-205.994" y="61.849" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-205.994" y="61.849" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-205.994" y="61.849" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-205.994" y="61.849" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-71.374" y="36.409" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-205.994" y="61.849" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-205.994" y="61.849" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-71.374" y="29.909" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-205.994" y="61.849" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D31" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-103.759" y="37.973" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-219.329" y="74.803" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-219.329" y="74.803" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-219.329" y="74.803" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-219.329" y="74.803" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-219.329" y="74.803" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-219.329" y="74.803" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-103.759" y="40.473" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-219.329" y="74.803" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-219.329" y="74.803" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-103.759" y="33.973" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-219.329" y="74.803" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D32" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-79.375" y="37.465" smashed="yes" rot="R270">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-42.545" y="179.705" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-42.545" y="179.705" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-42.545" y="179.705" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-42.545" y="179.705" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-42.545" y="179.705" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-42.545" y="179.705" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-76.875" y="37.465" size="1.27" layer="25" rot="R270" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-42.545" y="179.705" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-42.545" y="179.705" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-83.375" y="37.465" size="1.27" layer="27" rot="R270" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-42.545" y="179.705" size="1.778" layer="27" rot="R270" display="off"/>
-</element>
-<element name="D33" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-63.5" y="13.97" smashed="yes" rot="R90">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-100.33" y="-154.94" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-100.33" y="-154.94" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-100.33" y="-154.94" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-100.33" y="-154.94" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-100.33" y="-154.94" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-100.33" y="-154.94" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-66" y="13.97" size="1.27" layer="25" rot="R90" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-100.33" y="-154.94" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-100.33" y="-154.94" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-59.5" y="13.97" size="1.27" layer="27" rot="R90" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-100.33" y="-154.94" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
-<element name="D34" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-108.458" y="37.973" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-258.318" y="83.693" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-258.318" y="83.693" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-258.318" y="83.693" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-258.318" y="83.693" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-258.318" y="83.693" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-258.318" y="83.693" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-108.458" y="40.473" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-258.318" y="83.693" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-258.318" y="83.693" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-108.458" y="33.973" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-258.318" y="83.693" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D35" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-87.249" y="33.909" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-263.779" y="79.629" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-263.779" y="79.629" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-263.779" y="79.629" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-263.779" y="79.629" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-263.779" y="79.629" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-263.779" y="79.629" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-87.249" y="36.409" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-263.779" y="79.629" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-263.779" y="79.629" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-87.249" y="29.909" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-263.779" y="79.629" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D36" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-74.549" y="37.465" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-277.749" y="83.185" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-277.749" y="83.185" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-277.749" y="83.185" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-277.749" y="83.185" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-277.749" y="83.185" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-277.749" y="83.185" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-74.549" y="39.965" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-277.749" y="83.185" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-277.749" y="83.185" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-74.549" y="33.465" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-277.749" y="83.185" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D37" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-110.871" y="33.909" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-295.021" y="88.519" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-295.021" y="88.519" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-295.021" y="88.519" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-295.021" y="88.519" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-295.021" y="88.519" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-295.021" y="88.519" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-110.871" y="36.409" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-295.021" y="88.519" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-295.021" y="88.519" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-110.871" y="29.909" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-295.021" y="88.519" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D38" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-96.52" y="13.97" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-307.34" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-307.34" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-307.34" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-307.34" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-307.34" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-307.34" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-96.52" y="16.47" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-307.34" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-307.34" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-96.52" y="9.97" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-307.34" y="68.58" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D39" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-99.06" y="37.846" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-336.55" y="92.456" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-336.55" y="92.456" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-336.55" y="92.456" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-336.55" y="92.456" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-336.55" y="92.456" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-336.55" y="92.456" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-99.06" y="40.346" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-336.55" y="92.456" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-336.55" y="92.456" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-99.06" y="33.846" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-336.55" y="92.456" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D40" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-111.76" y="5.08" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-330.2" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-330.2" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-330.2" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-330.2" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-330.2" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-330.2" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-111.76" y="7.58" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-330.2" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-330.2" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-111.76" y="1.08" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-330.2" y="68.58" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D41" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-96.52" y="5.08" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-341.63" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-341.63" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-341.63" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-341.63" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-341.63" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-341.63" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-96.52" y="7.58" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-341.63" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-341.63" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-96.52" y="1.08" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-341.63" y="68.58" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D42" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-81.28" y="5.08" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-353.06" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-353.06" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-353.06" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-353.06" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-353.06" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-353.06" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-81.28" y="7.58" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-353.06" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-353.06" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-81.28" y="1.08" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-353.06" y="68.58" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D43" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-50.8" y="-69.85" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-63.5" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-63.5" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-63.5" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-63.5" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-63.5" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-63.5" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-111.76" y="-1.31" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-63.5" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-63.5" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-50.8" y="-73.85" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-63.5" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D44" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-35.56" y="-69.85" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-74.93" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-74.93" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-74.93" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-74.93" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-74.93" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-74.93" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-96.52" y="-1.31" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-74.93" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-74.93" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-35.56" y="-73.85" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-74.93" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D45" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-20.32" y="-69.85" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-86.36" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-86.36" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-86.36" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-86.36" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-86.36" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-86.36" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-81.28" y="-1.31" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-86.36" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-86.36" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-20.32" y="-73.85" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-86.36" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D46" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-50.8" y="-78.74" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-97.79" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-97.79" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-97.79" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-97.79" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-97.79" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-97.79" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-50.8" y="-76.24" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-97.79" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-97.79" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-50.8" y="-82.74" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-97.79" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D47" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-35.56" y="-78.74" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-109.22" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-109.22" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-109.22" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-109.22" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-109.22" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-109.22" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-35.56" y="-76.24" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-109.22" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-109.22" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-35.56" y="-82.74" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-109.22" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D48" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-20.32" y="-78.74" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-120.65" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-120.65" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-120.65" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-120.65" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-120.65" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-120.65" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-20.32" y="-76.24" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-120.65" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-120.65" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-20.32" y="-82.74" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-120.65" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D49" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-50.8" y="-87.63" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-132.08" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-132.08" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-132.08" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-132.08" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-132.08" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-132.08" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-50.8" y="-85.13" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-132.08" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-132.08" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-50.8" y="-91.63" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-132.08" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D50" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-35.56" y="-87.63" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-143.51" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-143.51" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-143.51" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-143.51" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-143.51" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-143.51" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-35.56" y="-85.13" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-143.51" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-143.51" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-35.56" y="-91.63" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-143.51" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D51" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-20.32" y="-87.63" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-154.94" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-154.94" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-154.94" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-154.94" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-154.94" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-154.94" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-20.32" y="-85.13" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-154.94" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-154.94" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-20.32" y="-91.63" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-154.94" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D52" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-50.8" y="-96.52" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-166.37" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-166.37" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-166.37" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-166.37" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-166.37" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-166.37" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-50.8" y="-94.02" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-166.37" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-166.37" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-50.8" y="-100.52" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-166.37" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D53" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-35.56" y="-96.52" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-177.8" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-177.8" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-177.8" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-177.8" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-177.8" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-177.8" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-35.56" y="-94.02" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-177.8" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-177.8" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-35.56" y="-100.52" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-177.8" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D54" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-20.32" y="-96.52" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-189.23" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-189.23" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-189.23" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-189.23" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-189.23" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-189.23" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-20.32" y="-94.02" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-189.23" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-189.23" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-20.32" y="-100.52" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-189.23" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D55" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-50.8" y="-105.41" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-200.66" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-200.66" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-200.66" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-200.66" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-200.66" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-200.66" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-50.8" y="-102.91" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-200.66" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-200.66" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-50.8" y="-109.41" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-200.66" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D56" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-35.56" y="-105.41" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-212.09" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-212.09" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-212.09" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-212.09" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-212.09" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-212.09" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-35.56" y="-102.91" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-212.09" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-212.09" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-35.56" y="-109.41" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-212.09" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D57" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-20.32" y="-105.41" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-223.52" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-223.52" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-223.52" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-223.52" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-223.52" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-223.52" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-20.32" y="-102.91" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-223.52" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-223.52" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-20.32" y="-109.41" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-223.52" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D58" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-50.8" y="-114.3" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-234.95" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-234.95" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-234.95" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-234.95" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-234.95" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-234.95" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-50.8" y="-111.8" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-234.95" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-234.95" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-50.8" y="-118.3" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-234.95" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D59" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-35.56" y="-114.3" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-246.38" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-246.38" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-246.38" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-246.38" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-246.38" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-246.38" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-35.56" y="-111.8" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-246.38" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-246.38" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-35.56" y="-118.3" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-246.38" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D60" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-20.32" y="-114.3" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-257.81" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-257.81" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-257.81" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-257.81" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-257.81" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-257.81" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-20.32" y="-111.8" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-257.81" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-257.81" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-20.32" y="-118.3" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-257.81" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D61" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-50.8" y="-123.19" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-269.24" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-269.24" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-269.24" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-269.24" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-269.24" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-269.24" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-50.8" y="-120.69" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-269.24" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-269.24" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-50.8" y="-127.19" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-269.24" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D62" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-35.56" y="-123.19" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-280.67" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-280.67" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-280.67" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-280.67" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-280.67" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-280.67" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-35.56" y="-120.69" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-280.67" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-280.67" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-35.56" y="-127.19" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-280.67" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D63" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-20.32" y="-123.19" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-292.1" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-292.1" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-292.1" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-292.1" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-292.1" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-292.1" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-20.32" y="-120.69" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-292.1" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-292.1" y="-60.96" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-20.32" y="-127.19" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-292.1" y="-60.96" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D64" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-50.8" y="-132.08" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-63.5" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-63.5" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-63.5" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-63.5" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-63.5" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-63.5" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-50.8" y="-129.58" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-63.5" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-63.5" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-50.8" y="-136.08" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-63.5" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D65" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-35.56" y="-132.08" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-74.93" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-74.93" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-74.93" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-74.93" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-74.93" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-74.93" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-35.56" y="-129.58" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-74.93" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-74.93" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-35.56" y="-136.08" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-74.93" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D66" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-20.32" y="-132.08" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-86.36" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-86.36" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-86.36" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-86.36" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-86.36" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-86.36" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-20.32" y="-129.58" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-86.36" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-86.36" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-20.32" y="-136.08" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-86.36" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D67" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-50.8" y="-140.97" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-97.79" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-97.79" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-97.79" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-97.79" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-97.79" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-97.79" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-50.8" y="-138.47" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-97.79" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-97.79" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-50.8" y="-144.97" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-97.79" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D68" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-35.56" y="-140.97" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-109.22" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-109.22" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-109.22" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-109.22" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-109.22" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-109.22" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-35.56" y="-138.47" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-109.22" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-109.22" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-35.56" y="-144.97" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-109.22" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D69" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-20.32" y="-140.97" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-120.65" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-120.65" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-120.65" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-120.65" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-120.65" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-120.65" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-20.32" y="-138.47" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-120.65" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-120.65" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-20.32" y="-144.97" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-120.65" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D70" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-50.8" y="-149.86" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-132.08" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-132.08" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-132.08" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-132.08" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-132.08" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-132.08" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-50.8" y="-147.36" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-132.08" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-132.08" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-50.8" y="-153.86" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-132.08" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D71" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-35.56" y="-149.86" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-143.51" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-143.51" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-143.51" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-143.51" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-143.51" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-143.51" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-35.56" y="-147.36" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-143.51" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-143.51" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-35.56" y="-153.86" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-143.51" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D72" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-20.32" y="-149.86" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-154.94" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-154.94" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-154.94" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-154.94" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-154.94" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-154.94" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-20.32" y="-147.36" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-154.94" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-154.94" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-20.32" y="-153.86" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-154.94" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D73" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-50.8" y="-158.75" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-166.37" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-166.37" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-166.37" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-166.37" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-166.37" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-166.37" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-50.8" y="-156.25" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-166.37" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-166.37" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-50.8" y="-162.75" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-166.37" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D74" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-35.56" y="-158.75" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-177.8" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-177.8" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-177.8" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-177.8" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-177.8" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-177.8" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-35.56" y="-156.25" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-177.8" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-177.8" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-35.56" y="-162.75" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-177.8" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D75" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-20.32" y="-158.75" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-189.23" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-189.23" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-189.23" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-189.23" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-189.23" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-189.23" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-20.32" y="-156.25" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-189.23" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-189.23" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-20.32" y="-162.75" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-189.23" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D76" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-50.8" y="-167.64" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-200.66" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-200.66" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-200.66" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-200.66" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-200.66" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-200.66" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-50.8" y="-165.14" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-200.66" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-200.66" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-50.8" y="-171.64" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-200.66" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D77" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-35.56" y="-167.64" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-212.09" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-212.09" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-212.09" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-212.09" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-212.09" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-212.09" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-35.56" y="-165.14" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-212.09" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-212.09" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-35.56" y="-171.64" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-212.09" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D78" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-20.32" y="-167.64" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-223.52" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-223.52" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-223.52" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-223.52" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-223.52" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-223.52" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-20.32" y="-165.14" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-223.52" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-223.52" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-20.32" y="-171.64" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-223.52" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D79" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-50.8" y="-176.53" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-234.95" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-234.95" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-234.95" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-234.95" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-234.95" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-234.95" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-50.8" y="-174.03" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-234.95" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-234.95" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-50.8" y="-180.53" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-234.95" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D80" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-35.56" y="-176.53" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-246.38" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-246.38" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-246.38" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-246.38" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-246.38" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-246.38" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-35.56" y="-174.03" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-246.38" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-246.38" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-35.56" y="-180.53" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-246.38" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D81" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-20.32" y="-176.53" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-257.81" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-257.81" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-257.81" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-257.81" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-257.81" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-257.81" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-20.32" y="-174.03" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-257.81" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-257.81" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-20.32" y="-180.53" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-257.81" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D82" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-50.8" y="-185.42" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-269.24" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-269.24" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-269.24" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-269.24" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-269.24" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-269.24" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-50.8" y="-182.92" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-269.24" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-269.24" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-50.8" y="-189.42" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-269.24" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D83" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-35.56" y="-185.42" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-280.67" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-280.67" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-280.67" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-280.67" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-280.67" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-280.67" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-35.56" y="-182.92" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-280.67" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-280.67" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-35.56" y="-189.42" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-280.67" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D84" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-20.32" y="-185.42" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-292.1" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-292.1" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-292.1" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-292.1" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-292.1" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-292.1" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-20.32" y="-182.92" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-292.1" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-292.1" y="-123.19" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-20.32" y="-189.42" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-292.1" y="-123.19" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D85" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-63.5" y="-185.42" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-63.5" y="-185.42" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-63.5" y="-185.42" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-63.5" y="-185.42" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-63.5" y="-185.42" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-63.5" y="-185.42" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-63.5" y="-185.42" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-63.5" y="-182.92" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-63.5" y="-185.42" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-63.5" y="-185.42" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-63.5" y="-189.42" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-63.5" y="-185.42" size="1.778" layer="27" display="off"/>
-</element>
-<element name="D86" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" package="WL-TMRW_3MM_STOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" value="151033RS03000" x="-74.93" y="-185.42" smashed="yes">
-<attribute name="CHIP-TECHNOLOGY" value="AlInGaP" x="-74.93" y="-185.42" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae" x="-74.93" y="-185.42" size="1.778" layer="27" display="off"/>
-<attribute name="DOMINANT-WAVELENGTH" value="621nm" x="-74.93" y="-185.42" size="1.778" layer="27" display="off"/>
-<attribute name="EMITTING-COLOR" value="Red" x="-74.93" y="-185.42" size="1.778" layer="27" display="off"/>
-<attribute name="FORWARD-VOLTAGE" value="2V" x="-74.93" y="-185.42" size="1.778" layer="27" display="off"/>
-<attribute name="LUMINOUS-INTENSITY" value="2600mcd" x="-74.93" y="-185.42" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-74.93" y="-182.92" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="PART-NUMBER" value="151033RS03000" x="-74.93" y="-185.42" size="1.778" layer="27" display="off"/>
-<attribute name="PEAK-WAVELENGTH" value="628nm" x="-74.93" y="-185.42" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-74.93" y="-189.42" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VIEWING-ANGLE" value="30°" x="-74.93" y="-185.42" size="1.778" layer="27" display="off"/>
+<element name="U1" library="SparkFun-IC-Logic" library_urn="urn:adsk.eagle:library:523" package="SO16" package3d_urn="urn:adsk.eagle:package:38808/2" value="SN74HC595D" x="35.56" y="8.89" smashed="yes" rot="R90">
+<attribute name="NAME" x="35.56" y="3.175" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
+<attribute name="PROD_ID" value="IC-07875" x="35.56" y="8.89" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="35.56" y="15.24" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="bottom-center"/>
+</element>
+<element name="U2" library="SparkFun-IC-Logic" library_urn="urn:adsk.eagle:library:523" package="SO16" package3d_urn="urn:adsk.eagle:package:38808/2" value="SN74HC595D" x="35.56" y="21.59" smashed="yes" rot="R90">
+<attribute name="NAME" x="35.56" y="15.875" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
+<attribute name="PROD_ID" value="IC-07875" x="35.56" y="21.59" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="35.56" y="27.94" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="bottom-center"/>
+</element>
+<element name="Q4" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" package="SOT23-BEC" package3d_urn="urn:adsk.eagle:package:28748/2" value="MMBT3906LT1SMD" x="48.26" y="21.59" smashed="yes">
+<attribute name="NAME" x="46.355" y="23.495" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="6" x="48.26" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="46.355" y="18.415" size="1.27" layer="27"/>
+</element>
+<element name="R2" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" package="RESC2012X65" package3d_urn="urn:adsk.eagle:package:42429645/1" value="4k7" x="58.42" y="18.415" smashed="yes">
+<attribute name="CATEGORY" value="Resistor" x="58.42" y="18.415" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="" x="58.42" y="18.415" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="58.42" y="18.415" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="58.42" y="20.0741" size="1.27" layer="25" align="bottom-center"/>
+<attribute name="OPERATING_TEMP" value="" x="58.42" y="18.415" size="1.778" layer="27" display="off"/>
+<attribute name="PART_STATUS" value="" x="58.42" y="18.415" size="1.778" layer="27" display="off"/>
+<attribute name="RATING" value="" x="58.42" y="18.415" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS_COMPLIANT" value="" x="58.42" y="18.415" size="1.778" layer="27" display="off"/>
+<attribute name="SERIES" value="" x="58.42" y="18.415" size="1.778" layer="27" display="off"/>
+<attribute name="SUB-CATEGORY" value="Fixed" x="58.42" y="18.415" size="1.778" layer="27" display="off"/>
+<attribute name="THERMALLOSS" value="" x="58.42" y="18.415" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="" x="58.42" y="18.415" size="1.778" layer="27" display="off"/>
+<attribute name="TYPE" value="" x="58.42" y="18.415" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="58.42" y="16.7559" size="1.27" layer="27" align="top-center"/>
+</element>
+<element name="R3" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" package="RESC2012X65" package3d_urn="urn:adsk.eagle:package:42429645/1" value="4k7" x="52.07" y="18.542" smashed="yes">
+<attribute name="CATEGORY" value="Resistor" x="52.07" y="18.542" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="" x="52.07" y="18.542" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="52.07" y="18.542" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="52.07" y="20.2011" size="1.27" layer="25" align="bottom-center"/>
+<attribute name="OPERATING_TEMP" value="" x="52.07" y="18.542" size="1.778" layer="27" display="off"/>
+<attribute name="PART_STATUS" value="" x="52.07" y="18.542" size="1.778" layer="27" display="off"/>
+<attribute name="RATING" value="" x="52.07" y="18.542" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS_COMPLIANT" value="" x="52.07" y="18.542" size="1.778" layer="27" display="off"/>
+<attribute name="SERIES" value="" x="52.07" y="18.542" size="1.778" layer="27" display="off"/>
+<attribute name="SUB-CATEGORY" value="Fixed" x="52.07" y="18.542" size="1.778" layer="27" display="off"/>
+<attribute name="THERMALLOSS" value="" x="52.07" y="18.542" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="" x="52.07" y="18.542" size="1.778" layer="27" display="off"/>
+<attribute name="TYPE" value="" x="52.07" y="18.542" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="52.07" y="16.8829" size="1.27" layer="27" align="top-center"/>
+</element>
+<element name="R4" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" package="RESC2012X65" package3d_urn="urn:adsk.eagle:package:42429645/1" value="4k7" x="45.466" y="21.463" smashed="yes" rot="R90">
+<attribute name="CATEGORY" value="Resistor" x="45.466" y="21.463" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="" x="45.466" y="21.463" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="45.466" y="21.463" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="43.8069" y="21.463" size="1.27" layer="25" rot="R90" align="bottom-center"/>
+<attribute name="OPERATING_TEMP" value="" x="45.466" y="21.463" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PART_STATUS" value="" x="45.466" y="21.463" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="RATING" value="" x="45.466" y="21.463" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="ROHS_COMPLIANT" value="" x="45.466" y="21.463" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SERIES" value="" x="45.466" y="21.463" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SUB-CATEGORY" value="Fixed" x="45.466" y="21.463" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="THERMALLOSS" value="" x="45.466" y="21.463" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TOLERANCE" value="" x="45.466" y="21.463" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TYPE" value="" x="45.466" y="21.463" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="47.1251" y="21.463" size="1.27" layer="27" rot="R90" align="top-center"/>
+</element>
+<element name="R5" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" package="RESC2012X65" package3d_urn="urn:adsk.eagle:package:42429645/1" value="4k7" x="48.514" y="14.859" smashed="yes" rot="R270">
+<attribute name="CATEGORY" value="Resistor" x="48.514" y="14.859" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="" x="48.514" y="14.859" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="48.514" y="14.859" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="50.1731" y="14.859" size="1.27" layer="25" rot="R270" align="bottom-center"/>
+<attribute name="OPERATING_TEMP" value="" x="48.514" y="14.859" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PART_STATUS" value="" x="48.514" y="14.859" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="RATING" value="" x="48.514" y="14.859" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="ROHS_COMPLIANT" value="" x="48.514" y="14.859" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SERIES" value="" x="48.514" y="14.859" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SUB-CATEGORY" value="Fixed" x="48.514" y="14.859" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="THERMALLOSS" value="" x="48.514" y="14.859" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TOLERANCE" value="" x="48.514" y="14.859" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TYPE" value="" x="48.514" y="14.859" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="46.8549" y="14.859" size="1.27" layer="27" rot="R270" align="top-center"/>
+</element>
+<element name="Q2" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" package="SOT23-BEC" package3d_urn="urn:adsk.eagle:package:28748/2" value="MMBT3906LT1SMD" x="58.42" y="21.59" smashed="yes">
+<attribute name="NAME" x="56.515" y="23.495" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="6" x="58.42" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="56.515" y="18.415" size="1.27" layer="27"/>
+</element>
+<element name="Q3" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" package="SOT23-BEC" package3d_urn="urn:adsk.eagle:package:28748/2" value="MMBT3906LT1SMD" x="52.07" y="21.59" smashed="yes">
+<attribute name="NAME" x="50.165" y="23.495" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="6" x="52.07" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="50.165" y="18.415" size="1.27" layer="27"/>
+</element>
+<element name="Q5" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" package="SOT23-BEC" package3d_urn="urn:adsk.eagle:package:28748/2" value="MMBT3906LT1SMD" x="45.72" y="13.97" smashed="yes" rot="R180">
+<attribute name="NAME" x="47.625" y="12.065" size="1.27" layer="25" rot="R180"/>
+<attribute name="POPULARITY" value="6" x="45.72" y="13.97" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="47.625" y="17.145" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X06" package3d_urn="urn:adsk.eagle:package:22472/2" value="" x="52.07" y="10.16" smashed="yes" rot="R180">
+<attribute name="NAME" x="59.7662" y="8.3312" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="POPULARITY" value="79" x="52.07" y="10.16" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="59.69" y="13.335" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X06" package3d_urn="urn:adsk.eagle:package:22472/2" value="" x="52.07" y="25.4" smashed="yes">
+<attribute name="NAME" x="44.3738" y="27.2288" size="1.27" layer="25" ratio="10"/>
+<attribute name="POPULARITY" value="79" x="52.07" y="25.4" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="44.45" y="22.225" size="1.27" layer="27"/>
+</element>
+<element name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X07" package3d_urn="urn:adsk.eagle:package:22477/2" value="" x="68.58" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="66.7512" y="8.8138" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="POPULARITY" value="0" x="68.58" y="17.78" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="71.755" y="8.89" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0" x="29.972" y="10.795" smashed="yes" rot="R90">
+<attribute name="NAME" x="28.702" y="10.16" size="1.27" layer="25" rot="R90"/>
+<attribute name="POPULARITY" value="86" x="29.972" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="29.972" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="32.512" y="10.16" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0" x="30.48" y="27.94" smashed="yes">
+<attribute name="NAME" x="29.845" y="29.21" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="86" x="30.48" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="30.48" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="29.845" y="25.4" size="1.27" layer="27"/>
 </element>
 </elements>
 <signals>
@@ -3013,6 +2199,55 @@ design rules under a new name.</description>
 <wire x1="14.478" y1="24.892" x2="15.621" y2="26.035" width="0.3048" layer="1"/>
 <wire x1="11.684" y1="23.749" x2="12.827" y2="24.892" width="0.3048" layer="1"/>
 <wire x1="12.827" y1="24.892" x2="14.478" y2="24.892" width="0.3048" layer="1"/>
+<contactref element="U1" pad="13"/>
+<contactref element="U1" pad="8"/>
+<contactref element="U2" pad="13"/>
+<contactref element="U2" pad="8"/>
+<wire x1="32.76" y1="8.255" x2="34.925" y2="8.255" width="0.4064" layer="1"/>
+<wire x1="36.83" y1="10.16" x2="36.83" y2="12.7" width="0.4064" layer="1"/>
+<wire x1="36.83" y1="12.7" x2="37.465" y2="13.335" width="0.4064" layer="1"/>
+<wire x1="37.465" y1="13.335" x2="38.36" y2="13.335" width="0.4064" layer="1"/>
+<wire x1="34.925" y1="8.255" x2="36.83" y2="10.16" width="0.4064" layer="1"/>
+<wire x1="32.76" y1="20.955" x2="33.3744" y2="21.5694" width="0.4064" layer="1"/>
+<wire x1="33.3744" y1="21.5694" x2="33.50729375" y2="21.5694" width="0.4064" layer="1"/>
+<wire x1="37.97289375" y1="26.035" x2="38.36" y2="26.035" width="0.4064" layer="1"/>
+<wire x1="33.50729375" y1="21.5694" x2="37.97289375" y2="26.035" width="0.4064" layer="1"/>
+<wire x1="32.76" y1="20.955" x2="33.3744" y2="20.3406" width="0.4064" layer="1"/>
+<wire x1="33.3744" y1="20.3406" x2="33.50729375" y2="20.3406" width="0.4064" layer="1"/>
+<wire x1="33.50729375" y1="20.3406" x2="35.56" y2="18.28789375" width="0.4064" layer="1"/>
+<wire x1="35.56" y1="16.135" x2="38.36" y2="13.335" width="0.4064" layer="1"/>
+<wire x1="35.56" y1="18.28789375" x2="35.56" y2="16.135" width="0.4064" layer="1"/>
+<contactref element="R7" pad="2"/>
+<contactref element="R7" pad="1"/>
+<contactref element="IC2" pad="12"/>
+<contactref element="IC2" pad="11"/>
+<contactref element="IC2" pad="10"/>
+<contactref element="IC2" pad="9"/>
+<contactref element="IC2" pad="5"/>
+<contactref element="IC2" pad="6"/>
+<contactref element="IC2" pad="7"/>
+<contactref element="IC2" pad="8"/>
+<wire x1="15.621" y1="27.15" x2="10.541" y2="27.15" width="0.4064" layer="1"/>
+<wire x1="10.541" y1="36.35" x2="12.7" y2="36.35" width="0.4064" layer="1"/>
+<wire x1="12.7" y1="36.35" x2="14.351" y2="36.35" width="0.4064" layer="1"/>
+<wire x1="13.081" y1="27.15" x2="13.081" y2="35.969" width="0.4064" layer="1"/>
+<wire x1="13.081" y1="35.969" x2="12.7" y2="36.35" width="0.4064" layer="1"/>
+<wire x1="14.9654" y1="37.59729375" x2="15.17370625" y2="37.8056" width="0.4064" layer="1"/>
+<wire x1="14.351" y1="36.35" x2="14.9654" y2="36.9644" width="0.4064" layer="1"/>
+<wire x1="14.9654" y1="36.9644" x2="14.9654" y2="37.59729375" width="0.4064" layer="1"/>
+<wire x1="15.17370625" y1="37.8056" x2="21.4226" y2="37.8056" width="0.4064" layer="1"/>
+<wire x1="21.4226" y1="37.8056" x2="22.86" y2="36.3682" width="0.4064" layer="1"/>
+<wire x1="26.67" y1="27.94" x2="29.53" y2="27.94" width="0.4064" layer="1"/>
+<wire x1="22.86" y1="36.3682" x2="22.86" y2="31.75" width="0.4064" layer="1"/>
+<wire x1="22.86" y1="31.75" x2="26.67" y2="27.94" width="0.4064" layer="1"/>
+<wire x1="31.43" y1="27.94" x2="36.06789375" y2="27.94" width="0.4064" layer="1"/>
+<wire x1="36.06789375" y1="27.94" x2="37.97289375" y2="26.035" width="0.4064" layer="1"/>
+<wire x1="11.811" y1="36.35" x2="13.081" y2="36.35" width="0" layer="19" extent="1-1"/>
+<wire x1="14.351" y1="36.35" x2="13.081" y2="36.35" width="0" layer="19" extent="1-1"/>
+<wire x1="14.351" y1="27.15" x2="13.081" y2="27.15" width="0" layer="19" extent="1-1"/>
+<wire x1="11.811" y1="27.15" x2="13.081" y2="27.15" width="0" layer="19" extent="1-1"/>
+<wire x1="15.621" y1="27.15" x2="14.351" y2="27.15" width="0" layer="19" extent="1-1"/>
+<wire x1="31.43" y1="27.94" x2="29.53" y2="27.94" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBAT">
 <contactref element="IC2" pad="14"/>
@@ -3063,8 +2298,7 @@ design rules under a new name.</description>
 <wire x1="26.763" y1="18.32" x2="23.3426" y2="18.32" width="0.3048" layer="1"/>
 <wire x1="26.924" y1="18.481" x2="28.133" y2="18.481" width="0.3048" layer="1"/>
 <wire x1="28.133" y1="18.481" x2="28.321" y2="18.669" width="0.3048" layer="1"/>
-<wire x1="28.321" y1="18.669" x2="28.321" y2="21.59" width="0.3048" layer="1"/>
-<wire x1="28.321" y1="21.59" x2="28.321" y2="22.479" width="0.3048" layer="1"/>
+<wire x1="28.321" y1="18.669" x2="28.321" y2="22.479" width="0.3048" layer="1"/>
 <wire x1="27.874" y1="22.926" x2="26.924" y2="22.926" width="0.3048" layer="1"/>
 <wire x1="28.321" y1="22.479" x2="27.874" y2="22.926" width="0.3048" layer="1"/>
 <wire x1="18.161" y1="36.35" x2="18.161" y2="31.369" width="0.3048" layer="1"/>
@@ -3074,8 +2308,77 @@ design rules under a new name.</description>
 <wire x1="22.86" y1="29.21" x2="22.86" y2="27.94" width="0.3048" layer="1"/>
 <wire x1="22.86" y1="27.94" x2="24.384" y2="26.416" width="0.3048" layer="1"/>
 <wire x1="27.686" y1="26.416" x2="28.321" y2="25.781" width="0.3048" layer="1"/>
-<wire x1="28.321" y1="25.781" x2="28.321" y2="22.479" width="0.3048" layer="1"/>
+<wire x1="28.321" y1="25.781" x2="28.321" y2="22.86" width="0.3048" layer="1"/>
+<wire x1="28.321" y1="22.86" x2="28.321" y2="22.479" width="0.3048" layer="1"/>
 <wire x1="24.384" y1="26.416" x2="27.686" y2="26.416" width="0.3048" layer="1"/>
+<contactref element="U1" pad="10"/>
+<contactref element="U1" pad="16"/>
+<contactref element="U2" pad="16"/>
+<contactref element="U2" pad="10"/>
+<contactref element="Q2" pad="E"/>
+<contactref element="Q3" pad="E"/>
+<contactref element="Q4" pad="E"/>
+<contactref element="Q5" pad="E"/>
+<wire x1="59.69" y1="20.81" x2="59.445" y2="20.565" width="0.4064" layer="1"/>
+<wire x1="59.445" y1="20.565" x2="59.37" y2="20.49" width="0.4064" layer="1"/>
+<wire x1="53.34" y1="20.81" x2="53.095" y2="20.565" width="0.4064" layer="1"/>
+<wire x1="53.095" y1="20.565" x2="53.02" y2="20.49" width="0.4064" layer="1"/>
+<wire x1="49.21" y1="21.27" x2="49.21" y2="20.49" width="0.4064" layer="1"/>
+<wire x1="44.77" y1="15.07" x2="45.9144" y2="13.9256" width="0.4064" layer="1"/>
+<wire x1="45.9144" y1="13.9256" x2="46.36729375" y2="13.9256" width="0.4064" layer="1"/>
+<wire x1="46.36729375" y1="13.9256" x2="47.59289375" y2="12.7" width="0.4064" layer="1"/>
+<wire x1="59.69" y1="12.7" x2="60.706" y2="13.716" width="0.4064" layer="1"/>
+<wire x1="60.1154" y1="21.5456" x2="59.69" y2="21.5456" width="0.4064" layer="1"/>
+<wire x1="59.69" y1="21.5456" x2="53.34" y2="21.5456" width="0.4064" layer="1"/>
+<wire x1="53.34" y1="21.5456" x2="49.4856" y2="21.5456" width="0.4064" layer="1"/>
+<wire x1="49.4856" y1="21.5456" x2="49.21" y2="21.27" width="0.4064" layer="1"/>
+<wire x1="47.59289375" y1="12.7" x2="59.69" y2="12.7" width="0.4064" layer="1"/>
+<wire x1="60.706" y1="13.716" x2="60.706" y2="20.955" width="0.4064" layer="1"/>
+<wire x1="60.706" y1="20.955" x2="60.1154" y2="21.5456" width="0.4064" layer="1"/>
+<wire x1="53.34" y1="21.5456" x2="53.095" y2="21.3006" width="0.4064" layer="1"/>
+<wire x1="53.095" y1="21.3006" x2="53.095" y2="20.565" width="0.4064" layer="1"/>
+<wire x1="59.69" y1="21.5456" x2="59.445" y2="21.3006" width="0.4064" layer="1"/>
+<wire x1="59.445" y1="21.3006" x2="59.445" y2="20.565" width="0.4064" layer="1"/>
+<wire x1="33.655" y1="4.445" x2="32.76" y2="4.445" width="0.4064" layer="1"/>
+<wire x1="32.76" y1="4.445" x2="34.925" y2="4.445" width="0.4064" layer="1"/>
+<wire x1="35.814" y1="3.556" x2="56.896" y2="3.556" width="0.4064" layer="1"/>
+<wire x1="56.896" y1="3.556" x2="60.706" y2="7.366" width="0.4064" layer="1"/>
+<wire x1="60.706" y1="7.366" x2="60.706" y2="13.716" width="0.4064" layer="1"/>
+<wire x1="34.925" y1="4.445" x2="35.814" y2="3.556" width="0.4064" layer="1"/>
+<wire x1="32.76" y1="4.445" x2="32.385" y2="4.445" width="0.4064" layer="1"/>
+<wire x1="32.385" y1="12.065" x2="32.76" y2="12.065" width="0.4064" layer="1"/>
+<wire x1="60.706" y1="20.828003125" x2="60.706" y2="25.907996875" width="0.4064" layer="1"/>
+<wire x1="57.531" y1="29.083" x2="33.147" y2="29.083" width="0.4064" layer="1"/>
+<wire x1="60.706" y1="25.907996875" x2="57.531" y2="29.083" width="0.4064" layer="1"/>
+<wire x1="32.76" y1="24.765" x2="30.48" y2="24.765" width="0.3048" layer="1"/>
+<wire x1="30.48" y1="24.765" x2="30.226" y2="24.765" width="0.3048" layer="1"/>
+<wire x1="28.321" y1="22.86" x2="30.226" y2="24.765" width="0.3048" layer="1"/>
+<wire x1="31.8552" y1="13.76125" x2="31.8552" y2="12.90875" width="0.3048" layer="1"/>
+<wire x1="31.8552" y1="12.90875" x2="32.03375" y2="12.7302" width="0.3048" layer="1"/>
+<wire x1="32.03375" y1="12.7302" x2="32.0948" y2="12.7302" width="0.3048" layer="1"/>
+<wire x1="32.0948" y1="12.7302" x2="32.76" y2="12.065" width="0.3048" layer="1"/>
+<wire x1="32.76" y1="17.145" x2="32.76" y2="14.66605" width="0.3048" layer="1"/>
+<wire x1="32.76" y1="14.66605" x2="31.8552" y2="13.76125" width="0.3048" layer="1"/>
+<wire x1="33.48625" y1="11.3998" x2="33.6648" y2="11.22125" width="0.3048" layer="1"/>
+<wire x1="32.03375" y1="8.8598" x2="31.8552" y2="8.68125" width="0.3048" layer="1"/>
+<wire x1="31.8552" y1="8.68125" x2="31.8552" y2="7.82875" width="0.3048" layer="1"/>
+<wire x1="33.48625" y1="7.5898" x2="33.6648" y2="7.41125" width="0.3048" layer="1"/>
+<wire x1="33.6648" y1="5.28875" x2="33.48625" y2="5.1102" width="0.3048" layer="1"/>
+<wire x1="32.76" y1="12.065" x2="33.4252" y2="11.3998" width="0.3048" layer="1"/>
+<wire x1="33.4252" y1="11.3998" x2="33.48625" y2="11.3998" width="0.3048" layer="1"/>
+<wire x1="33.48625" y1="5.1102" x2="33.4252" y2="5.1102" width="0.3048" layer="1"/>
+<wire x1="33.4252" y1="5.1102" x2="32.76" y2="4.445" width="0.3048" layer="1"/>
+<wire x1="33.6648" y1="9.09875" x2="33.42585" y2="8.8598" width="0.3048" layer="1"/>
+<wire x1="33.42585" y1="8.8598" x2="32.03375" y2="8.8598" width="0.3048" layer="1"/>
+<wire x1="31.8552" y1="7.82875" x2="32.09415" y2="7.5898" width="0.3048" layer="1"/>
+<wire x1="32.09415" y1="7.5898" x2="33.48625" y2="7.5898" width="0.3048" layer="1"/>
+<wire x1="33.6648" y1="11.22125" x2="33.6648" y2="9.09875" width="0.3048" layer="1"/>
+<wire x1="33.6648" y1="7.41125" x2="33.6648" y2="5.28875" width="0.3048" layer="1"/>
+<wire x1="30.226" y1="24.765" x2="30.48" y2="25.019" width="0.254" layer="1"/>
+<wire x1="33.147" y1="29.083" x2="30.607" y2="29.083" width="0.254" layer="1"/>
+<wire x1="30.607" y1="29.083" x2="30.48" y2="28.956" width="0.254" layer="1"/>
+<wire x1="30.48" y1="28.956" x2="30.48" y2="24.765" width="0.254" layer="1"/>
+<wire x1="60.706" y1="20.828003125" x2="59.69" y2="20.81" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL">
 <contactref element="IC2" pad="16"/>
@@ -3100,6 +2403,197 @@ design rules under a new name.</description>
 <wire x1="19.05" y1="22.86" x2="21.59" y2="22.86" width="0.3048" layer="1"/>
 <wire x1="23.556" y1="24.826" x2="26.924" y2="24.826" width="0.3048" layer="1"/>
 <wire x1="21.59" y1="22.86" x2="23.556" y2="24.826" width="0.3048" layer="1"/>
+</signal>
+<signal name="N$1">
+<contactref element="U1" pad="9"/>
+<contactref element="U2" pad="14"/>
+<wire x1="32.76" y1="19.685" x2="33.4252" y2="19.0198" width="0.3048" layer="1"/>
+<wire x1="33.4252" y1="19.0198" x2="33.48625" y2="19.0198" width="0.3048" layer="1"/>
+<wire x1="33.48625" y1="19.0198" x2="34.29" y2="18.21605" width="0.3048" layer="1"/>
+<wire x1="34.29" y1="14.865" x2="32.76" y2="13.335" width="0.3048" layer="1"/>
+<wire x1="34.29" y1="18.21605" x2="34.29" y2="14.865" width="0.3048" layer="1"/>
+</signal>
+<signal name="4DIG_CLK">
+<contactref element="U2" pad="11"/>
+<contactref element="U1" pad="11"/>
+<contactref element="IC3" pad="17"/>
+<wire x1="32.76" y1="23.495" x2="31.115" y2="23.495" width="0.3048" layer="1"/>
+<wire x1="31.115" y1="23.495" x2="29.21" y2="21.59" width="0.3048" layer="1"/>
+<wire x1="29.21" y1="16.51" x2="29.21" y2="21.59" width="0.3048" layer="1"/>
+<wire x1="32.76" y1="10.795" x2="31.877" y2="10.795" width="0.3048" layer="1"/>
+<wire x1="23.3426" y1="17.52" x2="24.39" y2="17.52" width="0.3048" layer="1"/>
+<wire x1="25.4" y1="16.51" x2="29.21" y2="16.51" width="0.3048" layer="1"/>
+<wire x1="24.39" y1="17.52" x2="25.4" y2="16.51" width="0.3048" layer="1"/>
+<wire x1="32.76" y1="10.795" x2="28.575" y2="10.795" width="0.254" layer="1"/>
+<wire x1="23.3426" y1="16.0274" x2="23.3426" y2="17.52" width="0.254" layer="1"/>
+<wire x1="28.575" y1="10.795" x2="23.3426" y2="16.0274" width="0.254" layer="1"/>
+</signal>
+<signal name="4DIG_SER">
+<contactref element="U1" pad="14"/>
+<contactref element="IC3" pad="15"/>
+<wire x1="21.05" y1="16.0274" x2="21.0787" y2="15.9987" width="0.1524" layer="1"/>
+<wire x1="21.0787" y1="15.9987" x2="21.0118" y2="15.9318" width="0.3048" layer="1"/>
+<wire x1="21.0118" y1="15.9318" x2="21.0118" y2="14.25015" width="0.3048" layer="1"/>
+<wire x1="32.76" y1="6.985" x2="28.27695" y2="6.985" width="0.3048" layer="1"/>
+<wire x1="28.27695" y1="6.985" x2="21.0118" y2="14.25015" width="0.3048" layer="1"/>
+</signal>
+<signal name="4DIG_LATCH">
+<contactref element="U2" pad="12"/>
+<contactref element="IC3" pad="16"/>
+<wire x1="30.48" y1="21.59" x2="31.115" y2="22.225" width="0.3048" layer="1"/>
+<wire x1="31.115" y1="22.225" x2="32.76" y2="22.225" width="0.3048" layer="1"/>
+<contactref element="R6" pad="1"/>
+<wire x1="28.0324" y1="9.845" x2="21.85" y2="16.0274" width="0.254" layer="1"/>
+<wire x1="28.0324" y1="9.845" x2="29.972" y2="9.845" width="0.254" layer="1"/>
+<contactref element="U1" pad="12"/>
+<contactref element="R6" pad="2"/>
+<wire x1="29.972" y1="9.845" x2="30.292" y2="9.525" width="0.254" layer="1"/>
+<wire x1="30.292" y1="9.525" x2="32.76" y2="9.525" width="0.254" layer="1"/>
+<wire x1="29.972" y1="11.745" x2="29.972" y2="21.082" width="0.254" layer="1"/>
+<wire x1="29.972" y1="21.082" x2="30.48" y2="21.59" width="0.254" layer="1"/>
+<wire x1="29.972" y1="9.845" x2="29.972" y2="11.745" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$18">
+<contactref element="Q2" pad="B"/>
+<contactref element="R2" pad="2"/>
+<wire x1="57.47" y1="20.49" x2="59.3395" y2="18.6205" width="0.4064" layer="1"/>
+<wire x1="59.3395" y1="18.6205" x2="59.3395" y2="18.415" width="0.4064" layer="1"/>
+</signal>
+<signal name="N$19">
+<contactref element="Q3" pad="B"/>
+<contactref element="R3" pad="2"/>
+<wire x1="51.12" y1="20.49" x2="52.9895" y2="18.6205" width="0.4064" layer="1"/>
+<wire x1="52.9895" y1="18.6205" x2="52.9895" y2="18.542" width="0.4064" layer="1"/>
+</signal>
+<signal name="N$20">
+<contactref element="Q4" pad="B"/>
+<contactref element="R4" pad="2"/>
+<wire x1="45.466" y1="22.3825" x2="47.31" y2="20.5385" width="0.4064" layer="1"/>
+<wire x1="47.31" y1="20.5385" x2="47.31" y2="20.49" width="0.4064" layer="1"/>
+</signal>
+<signal name="N$21">
+<contactref element="Q5" pad="B"/>
+<contactref element="R5" pad="2"/>
+<wire x1="46.67" y1="15.07" x2="47.8005" y2="13.9395" width="0.4064" layer="1"/>
+<wire x1="47.8005" y1="13.9395" x2="48.514" y2="13.9395" width="0.4064" layer="1"/>
+</signal>
+<signal name="4DIG_B">
+<contactref element="JP2" pad="1"/>
+<contactref element="U2" pad="5"/>
+<wire x1="45.72" y1="25.4" x2="42.545" y2="22.225" width="0.4064" layer="1"/>
+<wire x1="42.545" y1="22.225" x2="38.36" y2="22.225" width="0.4064" layer="1"/>
+</signal>
+<signal name="4DIG_3">
+<contactref element="JP2" pad="2"/>
+<contactref element="Q4" pad="C"/>
+<wire x1="48.26" y1="25.4" x2="48.26" y2="22.69" width="0.4064" layer="1"/>
+</signal>
+<signal name="4DIG_2">
+<contactref element="JP2" pad="3"/>
+<contactref element="Q3" pad="C"/>
+<wire x1="50.8" y1="25.4" x2="50.8" y2="23.96" width="0.4064" layer="1"/>
+<wire x1="50.8" y1="23.96" x2="52.07" y2="22.69" width="0.4064" layer="1"/>
+</signal>
+<signal name="4DIG_F">
+<contactref element="JP2" pad="4"/>
+<contactref element="U2" pad="6"/>
+<wire x1="53.34" y1="25.4" x2="51.308" y2="27.432" width="0.4064" layer="1"/>
+<wire x1="44.704" y1="27.432" x2="40.767" y2="23.495" width="0.4064" layer="1"/>
+<wire x1="38.36" y1="23.495" x2="40.767" y2="23.495" width="0.4064" layer="1"/>
+<wire x1="51.308" y1="27.432" x2="44.704" y2="27.432" width="0.4064" layer="1"/>
+</signal>
+<signal name="4DIG_A">
+<contactref element="JP2" pad="5"/>
+<contactref element="U2" pad="7"/>
+<wire x1="55.88" y1="25.4" x2="52.959" y2="28.321" width="0.4064" layer="1"/>
+<wire x1="52.959" y1="28.321" x2="43.561" y2="28.321" width="0.4064" layer="1"/>
+<wire x1="43.561" y1="28.321" x2="40.005" y2="24.765" width="0.4064" layer="1"/>
+<wire x1="38.36" y1="24.765" x2="40.005" y2="24.765" width="0.4064" layer="1"/>
+</signal>
+<signal name="4DIG_1">
+<contactref element="JP2" pad="6"/>
+<contactref element="Q2" pad="C"/>
+<wire x1="58.42" y1="25.4" x2="58.42" y2="22.69" width="0.4064" layer="1"/>
+</signal>
+<signal name="4DIG_E">
+<contactref element="JP1" pad="1"/>
+<contactref element="U1" pad="1"/>
+<wire x1="38.36" y1="4.445" x2="53.975" y2="4.445" width="0.4064" layer="1"/>
+<wire x1="53.975" y1="4.445" x2="58.42" y2="8.89" width="0.4064" layer="1"/>
+<wire x1="58.42" y1="8.89" x2="58.42" y2="10.16" width="0.4064" layer="1"/>
+</signal>
+<signal name="4DIG_D">
+<contactref element="JP1" pad="2"/>
+<contactref element="U1" pad="2"/>
+<wire x1="52.705" y1="5.715" x2="55.88" y2="8.89" width="0.4064" layer="1"/>
+<wire x1="55.88" y1="8.89" x2="55.88" y2="10.16" width="0.4064" layer="1"/>
+<wire x1="38.36" y1="5.715" x2="52.705" y2="5.715" width="0.4064" layer="1"/>
+</signal>
+<signal name="4DIG_DP">
+<contactref element="JP1" pad="3"/>
+<contactref element="U1" pad="3"/>
+<wire x1="53.34" y1="8.89" x2="53.34" y2="10.16" width="0.4064" layer="1"/>
+<wire x1="38.36" y1="6.985" x2="42.545" y2="6.985" width="0.4064" layer="1"/>
+<wire x1="50.927" y1="6.477" x2="53.34" y2="8.89" width="0.4064" layer="1"/>
+<wire x1="42.545" y1="6.985" x2="43.053" y2="6.477" width="0.4064" layer="1"/>
+<wire x1="43.053" y1="6.477" x2="50.927" y2="6.477" width="0.4064" layer="1"/>
+</signal>
+<signal name="4DIG_C">
+<contactref element="JP1" pad="4"/>
+<contactref element="U1" pad="4"/>
+<wire x1="38.36" y1="8.255" x2="43.307" y2="8.255" width="0.4064" layer="1"/>
+<wire x1="49.149" y1="7.239" x2="50.8" y2="8.89" width="0.4064" layer="1"/>
+<wire x1="50.8" y1="8.89" x2="50.8" y2="10.16" width="0.4064" layer="1"/>
+<wire x1="43.307" y1="8.255" x2="44.323" y2="7.239" width="0.4064" layer="1"/>
+<wire x1="44.323" y1="7.239" x2="49.149" y2="7.239" width="0.4064" layer="1"/>
+</signal>
+<signal name="4DIG_G">
+<contactref element="JP1" pad="5"/>
+<contactref element="U1" pad="5"/>
+<wire x1="48.26" y1="10.16" x2="48.26" y2="8.89" width="0.4064" layer="1"/>
+<wire x1="48.26" y1="8.89" x2="47.371" y2="8.001" width="0.4064" layer="1"/>
+<wire x1="43.434" y1="9.525" x2="38.36" y2="9.525" width="0.4064" layer="1"/>
+<wire x1="47.371" y1="8.001" x2="44.958" y2="8.001" width="0.4064" layer="1"/>
+<wire x1="44.958" y1="8.001" x2="43.434" y2="9.525" width="0.4064" layer="1"/>
+</signal>
+<signal name="4DIG_4">
+<contactref element="JP1" pad="6"/>
+<contactref element="Q5" pad="C"/>
+<wire x1="45.72" y1="12.87" x2="45.72" y2="10.16" width="0.4064" layer="1"/>
+</signal>
+<signal name="4DIG_1IN">
+<contactref element="R2" pad="1"/>
+<wire x1="50.487609375" y1="17.4763" x2="50.18390625" y2="17.78" width="0.4064" layer="1"/>
+<wire x1="57.5005" y1="18.415" x2="56.5618" y2="17.4763" width="0.4064" layer="1"/>
+<wire x1="56.5618" y1="17.4763" x2="50.487609375" y2="17.4763" width="0.4064" layer="1"/>
+<contactref element="U2" pad="2"/>
+<wire x1="40.64" y1="17.78" x2="40.005" y2="18.415" width="0.4064" layer="1"/>
+<wire x1="38.36" y1="18.415" x2="40.005" y2="18.415" width="0.4064" layer="1"/>
+<wire x1="50.18390625" y1="17.78" x2="40.64" y2="17.78" width="0.4064" layer="1"/>
+</signal>
+<signal name="4DIG_2IN">
+<contactref element="R3" pad="1"/>
+<wire x1="50.6425" y1="19.05" x2="51.1505" y2="18.542" width="0.4064" layer="1"/>
+<contactref element="U2" pad="3"/>
+<wire x1="38.36" y1="19.685" x2="40.64" y2="19.685" width="0.4064" layer="1"/>
+<wire x1="40.64" y1="19.685" x2="41.275" y2="19.05" width="0.4064" layer="1"/>
+<wire x1="41.275" y1="19.05" x2="50.6425" y2="19.05" width="0.4064" layer="1"/>
+</signal>
+<signal name="4DIG_3IN">
+<contactref element="R4" pad="1"/>
+<wire x1="45.466" y1="20.5435" x2="45.2425" y2="20.32" width="0.4064" layer="1"/>
+<wire x1="45.2425" y1="20.32" x2="41.91" y2="20.32" width="0.4064" layer="1"/>
+<contactref element="U2" pad="4"/>
+<wire x1="41.91" y1="20.32" x2="41.275" y2="20.955" width="0.4064" layer="1"/>
+<wire x1="41.275" y1="20.955" x2="38.36" y2="20.955" width="0.4064" layer="1"/>
+</signal>
+<signal name="4DIG_4IN">
+<contactref element="R5" pad="1"/>
+<wire x1="48.514" y1="15.7785" x2="47.7825" y2="16.51" width="0.4064" layer="1"/>
+<contactref element="U2" pad="1"/>
+<wire x1="38.36" y1="17.145" x2="40.005" y2="17.145" width="0.4064" layer="1"/>
+<wire x1="40.64" y1="16.51" x2="40.005" y2="17.145" width="0.4064" layer="1"/>
+<wire x1="40.64" y1="16.51" x2="47.7825" y2="16.51" width="0.4064" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
