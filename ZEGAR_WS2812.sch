@@ -12784,9 +12784,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U3" gate="U1" pin="VCC"/>
 <wire x1="226.06" y1="254" x2="231.14" y2="254" width="0.1524" layer="91"/>
 <junction x="231.14" y="254"/>
-<wire x1="231.14" y1="330.2" x2="231.14" y2="342.9" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="330.2" x2="231.14" y2="335.28" width="0.1524" layer="91"/>
 <junction x="231.14" y="330.2"/>
 <label x="231.14" y="342.9" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="U10" gate="U1" pin="SCL"/>
+<wire x1="231.14" y1="335.28" x2="231.14" y2="342.9" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="322.58" x2="200.66" y2="322.58" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="322.58" x2="200.66" y2="335.28" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="335.28" x2="231.14" y2="335.28" width="0.1524" layer="91"/>
+<junction x="231.14" y="335.28"/>
 </segment>
 </net>
 <net name="SCL" class="0">

@@ -64,6 +64,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCopper" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
@@ -92,8 +93,13 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="no"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="117" name="PM_Ref" color="7" fill="1" visible="no" active="no"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="PF_Ref" color="7" fill="1" visible="no" active="no"/>
+<layer number="120" name="WFL_Ref" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -103,15 +109,40 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="no" active="no"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="no" active="no"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="no" active="no"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="138" name="EEE" color="7" fill="1" visible="no" active="no"/>
+<layer number="139" name="_tKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="141" name="ASSEMBLY_TOP" color="7" fill="1" visible="no" active="no"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="143" name="PLACE_BOUND_TOP" color="7" fill="1" visible="no" active="no"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="145" name="DrillLegend_01-02" color="7" fill="1" visible="no" active="no"/>
+<layer number="146" name="DrillLegend_01-15" color="7" fill="1" visible="no" active="no"/>
+<layer number="147" name="DrillLegend_01-16" color="7" fill="1" visible="no" active="no"/>
+<layer number="148" name="DrillLegend_01-20" color="7" fill="1" visible="no" active="no"/>
+<layer number="149" name="DrillLegend_02-15" color="7" fill="1" visible="no" active="no"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="no"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="no"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="no"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
@@ -151,6 +182,7 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="7" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="7" fill="1" visible="no" active="no"/>
+<layer number="253" name="Extra" color="7" fill="1" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
@@ -9143,6 +9175,334 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Wurth_LEDs_WL-TMRW" urn="urn:adsk.eagle:library:19063499">
+<description>&lt;BR&gt;Wurth Elektronik - Optoelectronic Components - LEDs - Singnal LEDs - TOP LED - THT Round - WL-TMRW&lt;br&gt;&lt;Hr&gt;
+&lt;BR&gt;&lt;BR&gt;
+
+&lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
+&lt;TR&gt;   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;&lt;br&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt; &lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------------------------&lt;BR&gt;
+&lt;B&gt;&lt;I&gt;&lt;span style='font-size:26pt;
+  color:#FF6600;'&gt;WE &lt;/span&gt;&lt;/i&gt;&lt;/b&gt;
+&lt;BR&gt;
+      ---------------------------&lt;BR&gt;&lt;b&gt;Würth Elektronik&lt;/b&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+
+  &lt;TR&gt;
+    &lt;TD COLSPAN=7&gt;&amp;nbsp;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+  
+&lt;/TABLE&gt;
+&lt;B&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;More than you expect&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;/B&gt;
+
+&lt;HR&gt;&lt;BR&gt;
+&lt;b&gt;Würth Elektronik eiSos GmbH &amp; Co. KG&lt;/b&gt;&lt;br&gt;
+EMC &amp; Inductive Solutions&lt;br&gt;
+
+Max-Eyth-Str.1&lt;br&gt;
+D-74638 Waldenburg&lt;br&gt;
+&lt;br&gt;
+Tel: +49 (0)7942-945-0&lt;br&gt;
+Fax:+49 (0)7942-945-5000&lt;br&gt;
+&lt;br&gt;
+&lt;a href="http://www.we-online.com/web/en/electronic_components/produkte_pb/bauteilebibliotheken/eagle_4.php"&gt;www.we-online.com/eagle&lt;/a&gt;&lt;br&gt;
+&lt;a href="mailto:libraries@we-online.com"&gt;libraries@we-online.com&lt;/a&gt; &lt;BR&gt;&lt;BR&gt;
+&lt;br&gt;&lt;HR&gt;&lt;BR&gt;
+Neither Autodesk nor Würth Elektronik eiSos does warrant that this library is error-free or &lt;br&gt;
+that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
+Please contact us for more information.&lt;br&gt;
+&lt;HR&gt;
+&lt;br&gt;Eagle Version 9, Library Revision 2022a, 2022-06-20&lt;br&gt;
+&lt;HR&gt;
+Copyright: Würth Elektronik</description>
+<packages>
+<package name="WL-TMRW_3MM" urn="urn:adsk.eagle:footprint:19063503/2" library_version="3">
+<description>&lt;b&gt;WL-TMRW THT Mono-color Round Waterclear
+
+&lt;/b&gt;&lt;br&gt;&lt;br&gt;Size: 3mm without stopper, THT, 2pins</description>
+<pad name="2" x="-1.27" y="0" drill="1"/>
+<pad name="1" x="1.27" y="0" drill="1"/>
+<text x="0" y="2.5" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-4" size="1.27" layer="27" align="bottom-center">&gt;VALUE</text>
+<text x="-2.9" y="0" size="1.016" layer="21" align="center">+</text>
+<text x="-2.9" y="0" size="1.016" layer="51" align="center">+</text>
+<circle x="0" y="0" radius="1.5" width="0.1" layer="51"/>
+<wire x1="1.5" y1="1.24" x2="1.5" y2="-1.24" width="0.1" layer="51"/>
+<wire x1="1.5" y1="1.24" x2="1.5" y2="-1.24" width="0.1" layer="51" curve="283.140843"/>
+<wire x1="1.6" y1="1" x2="1.6" y2="1.3" width="0.2" layer="21"/>
+<wire x1="1.6" y1="-1" x2="1.6" y2="-1.3" width="0.2" layer="21"/>
+<wire x1="1.6" y1="1.3" x2="-2" y2="0.85" width="0.2" layer="21" curve="119.415802"/>
+<wire x1="1.6" y1="-1.3" x2="-2" y2="-0.8" width="0.2" layer="21" curve="-121.485398"/>
+<polygon width="0.1" layer="39">
+<vertex x="0" y="-2.25" curve="-90"/>
+<vertex x="-2.25" y="0" curve="-90"/>
+<vertex x="0" y="2.25" curve="-90"/>
+<vertex x="2.25" y="0" curve="-90"/>
+</polygon>
+</package>
+<package name="WL-TMRW_3MM_STOPPER" urn="urn:adsk.eagle:footprint:19063501/2" library_version="3">
+<description>&lt;b&gt;WL-TMRW THT Mono-color Round Waterclear
+
+&lt;/b&gt;&lt;br&gt; &lt;br&gt;3mm with stopper, THT, 2pins</description>
+<pad name="2" x="-1.27" y="0.1" drill="1"/>
+<pad name="1" x="1.27" y="0.1" drill="1"/>
+<text x="-2.9" y="0.1" size="1.016" layer="21" align="center">+</text>
+<text x="-2.9" y="0.1" size="1.016" layer="51" align="center">+</text>
+<text x="0" y="2.5" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-4" size="1.27" layer="27" align="bottom-center">&gt;VALUE</text>
+<circle x="0" y="0.1" radius="1.5" width="0.1" layer="51"/>
+<wire x1="1.5" y1="1.34" x2="1.5" y2="-1.14" width="0.1" layer="51"/>
+<wire x1="1.5" y1="1.34" x2="1.5" y2="-1.14" width="0.1" layer="51" curve="283.140843"/>
+<wire x1="1.6" y1="1.1" x2="1.6" y2="1.4" width="0.2" layer="21"/>
+<wire x1="1.6" y1="-0.9" x2="1.6" y2="-1.2" width="0.2" layer="21"/>
+<wire x1="1.6" y1="1.4" x2="-2" y2="0.95" width="0.2" layer="21" curve="119.415802"/>
+<wire x1="1.6" y1="-1.2" x2="-2" y2="-0.7" width="0.2" layer="21" curve="-121.485398"/>
+<polygon width="0.1" layer="39">
+<vertex x="0" y="-2.15" curve="-90"/>
+<vertex x="-2.25" y="0.1" curve="-90"/>
+<vertex x="0" y="2.35" curve="-90"/>
+<vertex x="2.25" y="0.1" curve="-90"/>
+</polygon>
+</package>
+</packages>
+<packages3d>
+<package3d name="WL-TMRW_3MM" urn="urn:adsk.eagle:package:19063508/3" type="model" library_version="3">
+<description>&lt;b&gt;WL-TMRW THT Mono-color Round Waterclear
+
+&lt;/b&gt;&lt;br&gt;&lt;br&gt;Size: 3mm without stopper, THT, 2pins</description>
+<packageinstances>
+<packageinstance name="WL-TMRW_3MM"/>
+</packageinstances>
+</package3d>
+<package3d name="WL-TMRW_3MM_STOPPER" urn="urn:adsk.eagle:package:19063506/3" type="model" library_version="3">
+<description>&lt;b&gt;WL-TMRW THT Mono-color Round Waterclear
+
+&lt;/b&gt;&lt;br&gt; &lt;br&gt;3mm with stopper, THT, 2pins</description>
+<packageinstances>
+<packageinstance name="WL-TMRW_3MM_STOPPER"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="LED" urn="urn:adsk.eagle:symbol:19063504/1" library_version="3">
+<text x="-1.396" y="4.072" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="-1.652" y="-3.436" size="1.27" layer="96" align="bottom-center">&gt;VALUE</text>
+<text x="1.04" y="-1.34" size="1.27" layer="94">+</text>
+<pin name="+" x="2.54" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="-" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+<wire x1="0" y1="-1.27" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="2.032" x2="-2.159" y2="3.429" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="1.905" x2="-3.302" y2="3.302" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-2.159" y="3.429"/>
+<vertex x="-1.27" y="3.048"/>
+<vertex x="-1.778" y="2.54"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.302" y="3.302"/>
+<vertex x="-2.413" y="2.921"/>
+<vertex x="-2.921" y="2.413"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="WL-TMRW_3MM" urn="urn:adsk.eagle:component:19063510/3" prefix="D" library_version="3">
+<description>&lt;b&gt;WL-TMRW THT Mono-color Round Waterclear 
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Characteristics
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt;Low energy consumption 
+&lt;br&gt;High reliability 
+&lt;br&gt;Low current requirement 
+&lt;br&gt;Fast switching 
+&lt;br&gt;No UV/IR radiation 
+&lt;br&gt;Easy installation 
+&lt;br&gt;Ultra high luminous efficacy 
+&lt;br&gt;Versatile mounting on PC boards 
+&lt;br&gt;With and without stopper 
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Applications
+&lt;br&gt;&lt;br&gt;&lt;/b&gt; Indicator light 
+&lt;br&gt;Displays 
+&lt;br&gt;Traffic signal light 
+&lt;br&gt;Marker lights 
+&lt;br&gt;Commercial outdoor advertising 
+&lt;br&gt;Energy saving lamp 
+&lt;br&gt;Backlight 
+&lt;br&gt;LED Displays 
+&lt;br&gt;Electronic and optical indicator 
+&lt;br&gt;PBC mounted panel indicator 
+&lt;br&gt;Variable message sign
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a href="https://www.we-online.com/catalog/media/o14911v209%20Family_TMRW_THT.jpg" title="Enlarge picture"&gt;
+&lt;img src="https://www.we-online.com/catalog/media/o14911v209%20Family_TMRW_THT.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="www.we-online.com/catalog/WL-TMRW/?utm_source=eagle_model&amp;utm_medium=description_link&amp;utm_campaign=eisos_eagle"&gt;www.we-online.com/catalog/en/WL-TMRW&lt;/a&gt;&lt;p&gt;
+
+&lt;/b&gt;Updated by Ella 2022-06-21&lt;br&gt;
+&lt;/b&gt;2022(C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_WITHOUTSTOPPER" package="WL-TMRW_3MM">
+<connects>
+<connect gate="G$1" pin="+" pad="2"/>
+<connect gate="G$1" pin="-" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:19063508/3"/>
+</package3dinstances>
+<technologies>
+<technology name="_151034BS03000">
+<attribute name="CHIP-TECHNOLOGY" value="InGaN"/>
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151034BS03000?ae"/>
+<attribute name="DOMINANT-WAVELENGTH" value="470nm"/>
+<attribute name="EMITTING-COLOR" value="Blue"/>
+<attribute name="FORWARD-VOLTAGE" value="2.8V"/>
+<attribute name="LUMINOUS-INTENSITY" value="2400mcd"/>
+<attribute name="PART-NUMBER" value="151034BS03000"/>
+<attribute name="PEAK-WAVELENGTH" value="465nm"/>
+<attribute name="VALUE" value="151034BS03000"/>
+<attribute name="VIEWING-ANGLE" value="30°"/>
+</technology>
+<technology name="_151034GS03000">
+<attribute name="CHIP-TECHNOLOGY" value="InGaN"/>
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151034GS03000?ae"/>
+<attribute name="DOMINANT-WAVELENGTH" value="530nm"/>
+<attribute name="EMITTING-COLOR" value="Green"/>
+<attribute name="FORWARD-VOLTAGE" value="3.2V"/>
+<attribute name="LUMINOUS-INTENSITY" value="10000mcd"/>
+<attribute name="PART-NUMBER" value="151034GS03000"/>
+<attribute name="PEAK-WAVELENGTH" value="525nm"/>
+<attribute name="VALUE" value="151034GS03000"/>
+<attribute name="VIEWING-ANGLE" value="30°"/>
+</technology>
+<technology name="_151034RS03000">
+<attribute name="CHIP-TECHNOLOGY" value="AlInGaP"/>
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151034RS03000?ae"/>
+<attribute name="DOMINANT-WAVELENGTH" value="621nm"/>
+<attribute name="EMITTING-COLOR" value="Red"/>
+<attribute name="FORWARD-VOLTAGE" value="2V"/>
+<attribute name="LUMINOUS-INTENSITY" value="2600mcd"/>
+<attribute name="PART-NUMBER" value="151034RS03000"/>
+<attribute name="PEAK-WAVELENGTH" value="628nm"/>
+<attribute name="VALUE" value="151034RS03000"/>
+<attribute name="VIEWING-ANGLE" value="30°"/>
+</technology>
+<technology name="_151034YS03000">
+<attribute name="CHIP-TECHNOLOGY" value="AlInGaP"/>
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151034YS03000?ae"/>
+<attribute name="DOMINANT-WAVELENGTH" value="589nm"/>
+<attribute name="EMITTING-COLOR" value="Yellow"/>
+<attribute name="FORWARD-VOLTAGE" value="2V"/>
+<attribute name="LUMINOUS-INTENSITY" value="2100mcd"/>
+<attribute name="PART-NUMBER" value="151034YS03000"/>
+<attribute name="PEAK-WAVELENGTH" value="592nm"/>
+<attribute name="VALUE" value="151034YS03000"/>
+<attribute name="VIEWING-ANGLE" value="30°"/>
+</technology>
+</technologies>
+</device>
+<device name="_WITHSTOPPER" package="WL-TMRW_3MM_STOPPER">
+<connects>
+<connect gate="G$1" pin="+" pad="2"/>
+<connect gate="G$1" pin="-" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:19063506/3"/>
+</package3dinstances>
+<technologies>
+<technology name="_151033BS03000">
+<attribute name="CHIP-TECHNOLOGY" value="InGaN"/>
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033BS03000?ae"/>
+<attribute name="DOMINANT-WAVELENGTH" value="470nm"/>
+<attribute name="EMITTING-COLOR" value="Blue"/>
+<attribute name="FORWARD-VOLTAGE" value="2.8V"/>
+<attribute name="LUMINOUS-INTENSITY" value="3800mcd"/>
+<attribute name="PART-NUMBER" value="151033BS03000"/>
+<attribute name="PEAK-WAVELENGTH" value="465nm"/>
+<attribute name="VALUE" value="151033BS03000"/>
+<attribute name="VIEWING-ANGLE" value="30°"/>
+</technology>
+<technology name="_151033GS03000">
+<attribute name="CHIP-TECHNOLOGY" value="InGaN"/>
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033GS03000?ae"/>
+<attribute name="DOMINANT-WAVELENGTH" value="530nm"/>
+<attribute name="EMITTING-COLOR" value="Green"/>
+<attribute name="FORWARD-VOLTAGE" value="3.2V"/>
+<attribute name="LUMINOUS-INTENSITY" value="15000mcd"/>
+<attribute name="PART-NUMBER" value="151033GS03000"/>
+<attribute name="PEAK-WAVELENGTH" value="525nm"/>
+<attribute name="VALUE" value="151033GS03000"/>
+<attribute name="VIEWING-ANGLE" value="30°"/>
+</technology>
+<technology name="_151033RS03000">
+<attribute name="CHIP-TECHNOLOGY" value="AlInGaP"/>
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033RS03000?ae"/>
+<attribute name="DOMINANT-WAVELENGTH" value="621nm"/>
+<attribute name="EMITTING-COLOR" value="Red"/>
+<attribute name="FORWARD-VOLTAGE" value="2V"/>
+<attribute name="LUMINOUS-INTENSITY" value="2600mcd"/>
+<attribute name="PART-NUMBER" value="151033RS03000"/>
+<attribute name="PEAK-WAVELENGTH" value="628nm"/>
+<attribute name="VALUE" value="151033RS03000"/>
+<attribute name="VIEWING-ANGLE" value="30°"/>
+</technology>
+<technology name="_151033YS03000">
+<attribute name="CHIP-TECHNOLOGY" value="AlInGaP"/>
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/151033YS03000?ae"/>
+<attribute name="DOMINANT-WAVELENGTH" value="589nm"/>
+<attribute name="EMITTING-COLOR" value="Yellow"/>
+<attribute name="FORWARD-VOLTAGE" value="2V"/>
+<attribute name="LUMINOUS-INTENSITY" value="2100mcd"/>
+<attribute name="PART-NUMBER" value="151033YS03000"/>
+<attribute name="PEAK-WAVELENGTH" value="592nm"/>
+<attribute name="VALUE" value="151033YS03000"/>
+<attribute name="VIEWING-ANGLE" value="30°"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9161,6 +9521,92 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10K"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100n"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100n"/>
+<part name="D1" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D2" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D3" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D4" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D5" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D6" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D7" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D8" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D9" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D10" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D11" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D12" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D13" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D14" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D15" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D16" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D17" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D18" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D19" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D20" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D21" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D22" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D23" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D24" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D25" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D26" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D27" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D28" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D29" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D30" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D31" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D32" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D33" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D34" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D35" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D36" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D37" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D38" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D39" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D40" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D41" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D42" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D43" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D44" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D45" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D46" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D47" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D48" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D49" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D50" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D51" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D52" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D53" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D54" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D55" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D56" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D57" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D58" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D59" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D60" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D61" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D62" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D63" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D64" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D65" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D66" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D67" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D68" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D69" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D70" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D71" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D72" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D73" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D74" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D75" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D76" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D77" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D78" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D79" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D80" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D81" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D82" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D83" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D84" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D85" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
+<part name="D86" library="Wurth_LEDs_WL-TMRW" library_urn="urn:adsk.eagle:library:19063499" deviceset="WL-TMRW_3MM" device="_WITHSTOPPER" package3d_urn="urn:adsk.eagle:package:19063506/3" technology="_151033RS03000" value="151033RS03000"/>
 </parts>
 <sheets>
 <sheet>
@@ -9195,6 +9641,350 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="C4" gate="G$1" x="7.62" y="88.9" smashed="yes" rot="R270">
 <attribute name="NAME" x="8.001" y="87.376" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="2.921" y="87.376" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="D1" gate="G$1" x="20.32" y="157.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="24.392" y="158.876" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="16.884" y="159.132" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D2" gate="G$1" x="30.48" y="157.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="34.552" y="158.876" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="27.044" y="159.132" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D3" gate="G$1" x="40.64" y="157.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="44.712" y="158.876" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="37.204" y="159.132" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D4" gate="G$1" x="20.32" y="190.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="24.392" y="191.896" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="16.884" y="192.152" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D5" gate="G$1" x="30.48" y="190.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="34.552" y="191.896" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="27.044" y="192.152" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D6" gate="G$1" x="40.64" y="190.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="44.712" y="191.896" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="37.204" y="192.152" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D7" gate="G$1" x="40.64" y="226.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="36.568" y="224.664" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="44.076" y="224.408" size="1.27" layer="96" rot="R90" align="bottom-center"/>
+</instance>
+<instance part="D8" gate="G$1" x="30.48" y="226.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="26.408" y="224.664" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="33.916" y="224.408" size="1.27" layer="96" rot="R90" align="bottom-center"/>
+</instance>
+<instance part="D9" gate="G$1" x="20.32" y="226.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="16.248" y="224.664" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="23.756" y="224.408" size="1.27" layer="96" rot="R90" align="bottom-center"/>
+</instance>
+<instance part="D10" gate="G$1" x="12.7" y="185.42" smashed="yes" rot="R180">
+<attribute name="NAME" x="14.096" y="181.348" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="14.352" y="188.856" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D11" gate="G$1" x="12.7" y="175.26" smashed="yes" rot="R180">
+<attribute name="NAME" x="14.096" y="171.188" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="14.352" y="178.696" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D12" gate="G$1" x="12.7" y="165.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="14.096" y="161.028" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="14.352" y="168.536" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D13" gate="G$1" x="12.7" y="218.44" smashed="yes" rot="R180">
+<attribute name="NAME" x="14.096" y="214.368" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="14.352" y="221.876" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D14" gate="G$1" x="12.7" y="208.28" smashed="yes" rot="R180">
+<attribute name="NAME" x="14.096" y="204.208" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="14.352" y="211.716" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D15" gate="G$1" x="12.7" y="198.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="14.096" y="194.048" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="14.352" y="201.556" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D16" gate="G$1" x="48.26" y="198.12" smashed="yes">
+<attribute name="NAME" x="46.864" y="202.192" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="46.608" y="194.684" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D17" gate="G$1" x="48.26" y="208.28" smashed="yes">
+<attribute name="NAME" x="46.864" y="212.352" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="46.608" y="204.844" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D18" gate="G$1" x="48.26" y="218.44" smashed="yes">
+<attribute name="NAME" x="46.864" y="222.512" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="46.608" y="215.004" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D19" gate="G$1" x="48.26" y="165.1" smashed="yes">
+<attribute name="NAME" x="46.864" y="169.172" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="46.608" y="161.664" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D20" gate="G$1" x="48.26" y="175.26" smashed="yes">
+<attribute name="NAME" x="46.864" y="179.332" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="46.608" y="171.824" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D21" gate="G$1" x="48.26" y="185.42" smashed="yes">
+<attribute name="NAME" x="46.864" y="189.492" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="46.608" y="181.984" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D22" gate="G$1" x="66.04" y="157.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="70.112" y="158.876" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="62.604" y="159.132" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D23" gate="G$1" x="76.2" y="157.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="80.272" y="158.876" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="72.764" y="159.132" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D24" gate="G$1" x="86.36" y="157.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="90.432" y="158.876" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="82.924" y="159.132" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D25" gate="G$1" x="66.04" y="190.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="70.112" y="191.896" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="62.604" y="192.152" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D26" gate="G$1" x="76.2" y="190.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="80.272" y="191.896" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="72.764" y="192.152" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D27" gate="G$1" x="86.36" y="190.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="90.432" y="191.896" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="82.924" y="192.152" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D28" gate="G$1" x="86.36" y="226.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="82.288" y="224.664" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="89.796" y="224.408" size="1.27" layer="96" rot="R90" align="bottom-center"/>
+</instance>
+<instance part="D29" gate="G$1" x="76.2" y="226.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="72.128" y="224.664" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="79.636" y="224.408" size="1.27" layer="96" rot="R90" align="bottom-center"/>
+</instance>
+<instance part="D30" gate="G$1" x="66.04" y="226.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="61.968" y="224.664" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="69.476" y="224.408" size="1.27" layer="96" rot="R90" align="bottom-center"/>
+</instance>
+<instance part="D31" gate="G$1" x="58.42" y="185.42" smashed="yes" rot="R180">
+<attribute name="NAME" x="59.816" y="181.348" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="60.072" y="188.856" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D32" gate="G$1" x="58.42" y="175.26" smashed="yes" rot="R180">
+<attribute name="NAME" x="59.816" y="171.188" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="60.072" y="178.696" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D33" gate="G$1" x="58.42" y="165.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="59.816" y="161.028" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="60.072" y="168.536" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D34" gate="G$1" x="58.42" y="218.44" smashed="yes" rot="R180">
+<attribute name="NAME" x="59.816" y="214.368" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="60.072" y="221.876" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D35" gate="G$1" x="58.42" y="208.28" smashed="yes" rot="R180">
+<attribute name="NAME" x="59.816" y="204.208" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="60.072" y="211.716" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D36" gate="G$1" x="58.42" y="198.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="59.816" y="194.048" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="60.072" y="201.556" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D37" gate="G$1" x="93.98" y="198.12" smashed="yes">
+<attribute name="NAME" x="92.584" y="202.192" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="92.328" y="194.684" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D38" gate="G$1" x="93.98" y="208.28" smashed="yes">
+<attribute name="NAME" x="92.584" y="212.352" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="92.328" y="204.844" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D39" gate="G$1" x="93.98" y="218.44" smashed="yes">
+<attribute name="NAME" x="92.584" y="222.512" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="92.328" y="215.004" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D40" gate="G$1" x="93.98" y="165.1" smashed="yes">
+<attribute name="NAME" x="92.584" y="169.172" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="92.328" y="161.664" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D41" gate="G$1" x="93.98" y="175.26" smashed="yes">
+<attribute name="NAME" x="92.584" y="179.332" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="92.328" y="171.824" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D42" gate="G$1" x="93.98" y="185.42" smashed="yes">
+<attribute name="NAME" x="92.584" y="189.492" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="92.328" y="181.984" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D43" gate="G$1" x="121.92" y="157.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="125.992" y="158.876" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="118.484" y="159.132" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D44" gate="G$1" x="132.08" y="157.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="136.152" y="158.876" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="128.644" y="159.132" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D45" gate="G$1" x="142.24" y="157.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="146.312" y="158.876" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="138.804" y="159.132" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D46" gate="G$1" x="121.92" y="190.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="125.992" y="191.896" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="118.484" y="192.152" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D47" gate="G$1" x="132.08" y="190.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="136.152" y="191.896" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="128.644" y="192.152" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D48" gate="G$1" x="142.24" y="190.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="146.312" y="191.896" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="138.804" y="192.152" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D49" gate="G$1" x="142.24" y="226.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="138.168" y="224.664" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="145.676" y="224.408" size="1.27" layer="96" rot="R90" align="bottom-center"/>
+</instance>
+<instance part="D50" gate="G$1" x="132.08" y="226.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="128.008" y="224.664" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="135.516" y="224.408" size="1.27" layer="96" rot="R90" align="bottom-center"/>
+</instance>
+<instance part="D51" gate="G$1" x="121.92" y="226.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="117.848" y="224.664" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="125.356" y="224.408" size="1.27" layer="96" rot="R90" align="bottom-center"/>
+</instance>
+<instance part="D52" gate="G$1" x="114.3" y="185.42" smashed="yes" rot="R180">
+<attribute name="NAME" x="115.696" y="181.348" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="115.952" y="188.856" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D53" gate="G$1" x="114.3" y="175.26" smashed="yes" rot="R180">
+<attribute name="NAME" x="115.696" y="171.188" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="115.952" y="178.696" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D54" gate="G$1" x="114.3" y="165.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="115.696" y="161.028" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="115.952" y="168.536" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D55" gate="G$1" x="114.3" y="218.44" smashed="yes" rot="R180">
+<attribute name="NAME" x="115.696" y="214.368" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="115.952" y="221.876" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D56" gate="G$1" x="114.3" y="208.28" smashed="yes" rot="R180">
+<attribute name="NAME" x="115.696" y="204.208" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="115.952" y="211.716" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D57" gate="G$1" x="114.3" y="198.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="115.696" y="194.048" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="115.952" y="201.556" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D58" gate="G$1" x="149.86" y="198.12" smashed="yes">
+<attribute name="NAME" x="148.464" y="202.192" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="148.208" y="194.684" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D59" gate="G$1" x="149.86" y="208.28" smashed="yes">
+<attribute name="NAME" x="148.464" y="212.352" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="148.208" y="204.844" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D60" gate="G$1" x="149.86" y="218.44" smashed="yes">
+<attribute name="NAME" x="148.464" y="222.512" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="148.208" y="215.004" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D61" gate="G$1" x="149.86" y="165.1" smashed="yes">
+<attribute name="NAME" x="148.464" y="169.172" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="148.208" y="161.664" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D62" gate="G$1" x="149.86" y="175.26" smashed="yes">
+<attribute name="NAME" x="148.464" y="179.332" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="148.208" y="171.824" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D63" gate="G$1" x="149.86" y="185.42" smashed="yes">
+<attribute name="NAME" x="148.464" y="189.492" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="148.208" y="181.984" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D64" gate="G$1" x="167.64" y="157.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="171.712" y="158.876" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="164.204" y="159.132" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D65" gate="G$1" x="177.8" y="157.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="181.872" y="158.876" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="174.364" y="159.132" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D66" gate="G$1" x="187.96" y="157.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="192.032" y="158.876" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="184.524" y="159.132" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D67" gate="G$1" x="167.64" y="190.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="171.712" y="191.896" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="164.204" y="192.152" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D68" gate="G$1" x="177.8" y="190.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="181.872" y="191.896" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="174.364" y="192.152" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D69" gate="G$1" x="187.96" y="190.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="192.032" y="191.896" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="184.524" y="192.152" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D70" gate="G$1" x="187.96" y="226.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="183.888" y="224.664" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="191.396" y="224.408" size="1.27" layer="96" rot="R90" align="bottom-center"/>
+</instance>
+<instance part="D71" gate="G$1" x="177.8" y="226.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="173.728" y="224.664" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="181.236" y="224.408" size="1.27" layer="96" rot="R90" align="bottom-center"/>
+</instance>
+<instance part="D72" gate="G$1" x="167.64" y="226.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="163.568" y="224.664" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="171.076" y="224.408" size="1.27" layer="96" rot="R90" align="bottom-center"/>
+</instance>
+<instance part="D73" gate="G$1" x="160.02" y="185.42" smashed="yes" rot="R180">
+<attribute name="NAME" x="161.416" y="181.348" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="161.672" y="188.856" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D74" gate="G$1" x="160.02" y="175.26" smashed="yes" rot="R180">
+<attribute name="NAME" x="161.416" y="171.188" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="161.672" y="178.696" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D75" gate="G$1" x="160.02" y="165.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="161.416" y="161.028" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="161.672" y="168.536" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D76" gate="G$1" x="160.02" y="218.44" smashed="yes" rot="R180">
+<attribute name="NAME" x="161.416" y="214.368" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="161.672" y="221.876" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D77" gate="G$1" x="160.02" y="208.28" smashed="yes" rot="R180">
+<attribute name="NAME" x="161.416" y="204.208" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="161.672" y="211.716" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D78" gate="G$1" x="160.02" y="198.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="161.416" y="194.048" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="161.672" y="201.556" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="D79" gate="G$1" x="195.58" y="198.12" smashed="yes">
+<attribute name="NAME" x="194.184" y="202.192" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="193.928" y="194.684" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D80" gate="G$1" x="195.58" y="208.28" smashed="yes">
+<attribute name="NAME" x="194.184" y="212.352" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="193.928" y="204.844" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D81" gate="G$1" x="195.58" y="218.44" smashed="yes">
+<attribute name="NAME" x="194.184" y="222.512" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="193.928" y="215.004" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D82" gate="G$1" x="195.58" y="165.1" smashed="yes">
+<attribute name="NAME" x="194.184" y="169.172" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="193.928" y="161.664" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D83" gate="G$1" x="195.58" y="175.26" smashed="yes">
+<attribute name="NAME" x="194.184" y="179.332" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="193.928" y="171.824" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D84" gate="G$1" x="195.58" y="185.42" smashed="yes">
+<attribute name="NAME" x="194.184" y="189.492" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="193.928" y="181.984" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D85" gate="G$1" x="104.14" y="203.2" smashed="yes" rot="R270">
+<attribute name="NAME" x="108.212" y="204.596" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="100.704" y="204.852" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D86" gate="G$1" x="104.14" y="177.8" smashed="yes" rot="R270">
+<attribute name="NAME" x="108.212" y="179.196" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="100.704" y="179.452" size="1.27" layer="96" rot="R270" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
