@@ -3693,6 +3693,40 @@ design rules under a new name.</description>
 <wire x1="17.272" y1="25.908" x2="17.272" y2="25.4" width="0.508" layer="1"/>
 <wire x1="10.353" y1="33.147" x2="8.89" y2="34.61" width="0.508" layer="1"/>
 <wire x1="8.89" y1="34.61" x2="8.89" y2="39.37" width="0.508" layer="1"/>
+<polygon width="0.3048" layer="1" isolate="0.8128">
+<vertex x="-50.8" y="29.21"/>
+<vertex x="-55.88" y="17.78"/>
+<vertex x="-58.42" y="6.35"/>
+<vertex x="-58.42" y="-6.35"/>
+<vertex x="-55.88" y="-17.78"/>
+<vertex x="-50.8" y="-29.21"/>
+<vertex x="-44.45" y="-38.1"/>
+<vertex x="-33.02" y="-48.26"/>
+<vertex x="-24.13" y="-53.34"/>
+<vertex x="-13.97" y="-57.15"/>
+<vertex x="0" y="-58.42"/>
+<vertex x="12.7" y="-57.15"/>
+<vertex x="24.13" y="-53.34"/>
+<vertex x="36.83" y="-45.72"/>
+<vertex x="46.99" y="-35.56"/>
+<vertex x="54.61" y="-22.86"/>
+<vertex x="57.15" y="-15.24"/>
+<vertex x="58.42" y="-2.54"/>
+<vertex x="58.42" y="6.35"/>
+<vertex x="57.15" y="13.97"/>
+<vertex x="53.34" y="22.86"/>
+<vertex x="48.26" y="34.29"/>
+<vertex x="38.1" y="44.45"/>
+<vertex x="29.21" y="50.8"/>
+<vertex x="17.78" y="55.88"/>
+<vertex x="7.62" y="58.42"/>
+<vertex x="-2.54" y="58.42"/>
+<vertex x="-12.7" y="57.15"/>
+<vertex x="-24.13" y="53.34"/>
+<vertex x="-33.02" y="48.26"/>
+<vertex x="-43.18" y="40.64"/>
+<vertex x="-48.26" y="33.02"/>
+</polygon>
 <wire x1="3.74" y1="37.31260625" x2="3.74" y2="37.3126" width="0" layer="19" extent="1-1"/>
 <wire x1="1.499" y1="20.955" x2="4.343" y2="20.955" width="0" layer="19" extent="1-1"/>
 </signal>
